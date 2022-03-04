@@ -30,4 +30,4 @@ The rolling deployment is available for demo and trial at:
 
 To authenticate with the stable or rolling deployments use any email address and password. Your data will be kept separate based on the email address, however, **no password protection** is enabled on these services.
 
-_****_:warning: _**Note**: Dont store any personal or sensitive data on our public services, as no password protection is enabled._
+_****_:warning: _**Note**: Don't store any personal or sensitive data on our public services, as no password protection is enabled._
