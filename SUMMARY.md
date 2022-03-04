@@ -14,4 +14,4 @@
 
 * [Build](usage/build.md)
 * [Configuration](usage/configuration.md)
-* [Run](usage/Run.md)
+* [Run](usage/run.md)
