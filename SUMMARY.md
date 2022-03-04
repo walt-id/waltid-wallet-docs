@@ -7,4 +7,11 @@
 
 ## Getting started
 
+* [Quick start](getting-started/quick-start.md)
 * [Public deployments](getting-started/public-deployments.md)
+
+## Usage
+
+* [Build](usage/build.md)
+* [Configuration](usage/configuration.md)
+* [Run](usage/Run.md)
