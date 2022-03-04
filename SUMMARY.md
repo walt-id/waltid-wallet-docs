@@ -4,3 +4,7 @@
 
 * [Introduction](README.md)
 * [Functional overview](what-is-the-wallet/functional-overview.md)
+
+## Getting started
+
+* [Public deployments](getting-started/public-deployments.md)
