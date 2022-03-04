@@ -2,7 +2,7 @@
 
 **walt.id** operates the web wallet, as well as the verifier and issuer portals as public services, for demo and trial purposes.
 
-_****_:warning: _**Note,** that the services are **not meant for production use** and no guarantee for data integrity is given. All user data **may be scratched** without prior warning at our own discretion._
+:warning: _**Note,** that the services are **not meant for production use** and no guarantee for data integrity is given. All user data **may be scratched** without prior warning at our own discretion._
 
 ### Stable deployment
 
@@ -30,4 +30,4 @@ The rolling deployment is available for demo and trial at:
 
 To authenticate with the stable or rolling deployments use any email address and password. Your data will be kept separate based on the email address, however, **no password protection** is enabled on these services.
 
-_****_:warning: _**Note**: Don't store any personal or sensitive data on our public services, as no password protection is enabled._
+:warning: _**Note**: Don't store any personal or sensitive data on our public services, as no password protection is enabled._
