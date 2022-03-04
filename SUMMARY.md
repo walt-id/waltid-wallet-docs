@@ -3,4 +3,4 @@
 ## What is the wallet
 
 * [Introduction](README.md)
-* [Page 1](what-is-the-wallet/page-1.md)
+* [Functional overview](what-is-the-wallet/page-1.md)
