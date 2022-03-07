@@ -1,6 +1,4 @@
-# Quick start
-
-## Docker compose
+# Docker compose
 
 The easiest and fastest way to get the wallet **backend**, **frontend**, and **issuer** and **verifier portals** started, is by using our docker-compose configuration, located in the [waltid-wallet-backend](https://github.com/walt-id/waltid-wallet-backend) project, in the subfolder:
 
@@ -33,28 +31,3 @@ Visit the `./docker` folder for adjusting the system config in the following fil
 * **config/verifier-config.json** - verifier backend configuration
 * **config/issuer-config.json** - issuer backend configuration
 
-Please refer to the configuration section for more details about the available configuration options:
-
-{% content-ref url="../usage/configuration.md" %}
-[configuration.md](../usage/configuration.md)
-{% endcontent-ref %}
-
-## Build and run
-
-To build and run the services locally, you need _gradle_ and/or _docker_ to build the wallet backend, and _node_ and _yarn_ to build the web applications.
-
-For details of the build process refer to the Build section:
-
-{% content-ref url="../usage/build.md" %}
-[build.md](../usage/build.md)
-{% endcontent-ref %}
-
-For details of configuration and launch of the services refer to:
-
-{% content-ref url="../usage/configuration.md" %}
-[configuration.md](../usage/configuration.md)
-{% endcontent-ref %}
-
-{% content-ref url="../usage/run.md" %}
-[run.md](../usage/run.md)
-{% endcontent-ref %}

@@ -7,11 +7,18 @@
 
 ## Getting started
 
-* [Quick start](getting-started/quick-start.md)
+* [Quick start](getting-started/quick-start/README.md)
+  * [Docker compose](getting-started/quick-start/docker-compose.md)
+  * [Local build](getting-started/quick-start/local-build.md)
 * [Public deployments](getting-started/public-deployments.md)
 
-## Usage
+## Configuration and Setup
 
-* [Build](usage/build.md)
-* [Configuration](usage/configuration.md)
-* [Run](usage/run.md)
+* [Wallet backend setup](configuration-and-setup/wallet-backend-setup.md)
+* [Issuer portal setup](configuration-and-setup/issuer-portal-setup.md)
+* [Verifier portal setup](configuration-and-setup/verifier-portal-setup.md)
+
+## Reference
+
+* [Configuration files](reference/build.md)
+* [REST API](reference/rest-api.md)
