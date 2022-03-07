@@ -180,7 +180,7 @@ yarn install
 yarn dev
 ```
 
-The service is started on port **8000** by default.
+The service is started on port **4000** by default.
 
 **Production build**
 
