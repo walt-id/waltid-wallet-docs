@@ -26,8 +26,8 @@ You can find the publicly deployed API documentations for our [**stable and roll
 
 * **Rolling deployment:** 
 
-  [https://wallet.waltid.org/api/swagger]()
-  
+  [https://wallet.waltid.org/api/swagger](https://wallet.waltid.org/api/swagger)
+
 * **Stable deployment**
   
-  [https://wallet.walt.id/api/swagger]()
+  [https://wallet.walt.id/api/swagger](https://wallet.walt.id/api/swagger)
