@@ -61,7 +61,7 @@ This example shows the known wallet configuration for the walt.id web wallet, in
 
 ### Configuration example
 
-Here's a complete example for the **verifier-config.json**:
+Here's a complete example for the **issuer-config.json**:
 
 ```
 {
