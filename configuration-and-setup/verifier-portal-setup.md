@@ -26,7 +26,7 @@ Configure the URLs via which the verifier portal UI and backend API will be reac
 
 ### Known wallets
 
-The verifier portal supports the OIDC/SIOPv2 credential presentation flow, that is triggered directly from the verifier portal requesting credentials from an SSI wallet. To support this kind of verification flow, you need to configure the known wallets and their how to connect to them:
+The verifier portal supports the OIDC/SIOPv2 credential presentation flow, that is triggered directly from the verifier portal requesting credentials from an SSI wallet. To support this kind of verification flow, you need to configure the known wallets and how to connect to them:
 
 This example shows the known wallet configuration for the walt.id web wallet, in **verifier-config.json**:
 

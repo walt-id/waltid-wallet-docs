@@ -40,7 +40,7 @@ By default, the issuer backend will choose the first available DID in its data s
 
 ### Known wallets
 
-The issuer portal supports an issuance flow, that is triggered directly from the issuer portal into the SSI wallet. To support this kind of issuance flow, you need to configure the known wallets and their how to connect to them:
+The issuer portal supports an issuance flow, that is triggered directly from the issuer portal into the SSI wallet. To support this kind of issuance flow, you need to configure the known wallets and how to connect to them:
 
 This example shows the known wallet configuration for the walt.id web wallet, in **issuer-config.json**:
 
