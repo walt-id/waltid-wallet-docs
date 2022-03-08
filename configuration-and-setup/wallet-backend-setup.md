@@ -89,6 +89,24 @@ To keep the secrets separated from the main config, you can keep them in a separ
 You can make use of this separate secrets file, e.g. in a **Kubernetes** or **Docker Swarm** deployment, to keep the passwords in a safe secret object.
 Also, it enables you to separate the secrets from the default configuration, which you may want to check in to version control.
 
+### Configuration example
+
+Here's a complete example for the **wallet-config.json**:
+
+```
+{
+  "walletUiUrl": "https://wallet.waltid.org",
+  "walletApiUrl": "https://wallet.waltid.org/api",
+  "issuers": {
+    "walt.id": {
+      "id": "walt.id",
+      "url": "https://issuer.waltid.org/issuer-api/oidc",
+      "description": "walt.id Issuer Portal"
+    }
+  }
+}
+```
+
 ## Wallet backend data storage
 
 User data (dids, keys, credentials) are currently stored in subfolders for the **user id**, like so:

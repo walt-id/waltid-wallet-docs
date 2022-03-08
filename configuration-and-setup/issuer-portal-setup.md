@@ -18,8 +18,8 @@ Configure the URLs via which the issuer portal UI and backend API will be reacha
 
 ```
 {
-      "issuerUiUrl": "https://issuer.waltid.org",
-      "issuerApiUrl": "https://issuer.waltid.org/issuer-api",
+  "issuerUiUrl": "https://issuer.waltid.org",
+  "issuerApiUrl": "https://issuer.waltid.org/issuer-api",
 [...]
 }
 ```
@@ -47,6 +47,27 @@ This example shows the known wallet configuration for the walt.id web wallet, in
 ```
 {
 [...]
+  "wallets": {
+    "walt.id": {
+      "id": "walt.id",
+      "url": "https://wallet.waltid.org",
+      "presentPath": "api/wallet/siopv2/initPresentation/",
+      "receivePath" : "api/wallet/siopv2/initPassiveIssuance/",
+      "description": "walt.id web wallet"
+    }
+  }
+}
+```
+
+### Configuration example
+
+Here's a complete example for the **verifier-config.json**:
+
+```
+{
+  "issuerUiUrl": "https://issuer.waltid.org",
+  "issuerApiUrl": "https://issuer.waltid.org/issuer-api",
+  "issuerDid": "did:key:z6MkpooraZxqm99KwnMiRMzrVibVN5o5ow1BesLGFaG953RS",
   "wallets": {
     "walt.id": {
       "id": "walt.id",

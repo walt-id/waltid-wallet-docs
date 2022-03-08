@@ -18,8 +18,8 @@ Configure the URLs via which the verifier portal UI and backend API will be reac
 
 ```
 {
-      "verifierUiUrl": "https://verifier.waltid.org",
-      "verifierApiUrl": "https://verifier.waltid.org/verifier-api",
+  "verifierUiUrl": "https://verifier.waltid.org",
+  "verifierApiUrl": "https://verifier.waltid.org/verifier-api",
 [...]
 }
 ```
@@ -33,6 +33,26 @@ This example shows the known wallet configuration for the walt.id web wallet, in
 ```
 {
 [...]
+  "wallets": {
+    "walt.id": {
+      "id": "walt.id",
+      "url": "https://wallet.waltid.org",
+      "presentPath": "api/wallet/siopv2/initPresentation/",
+      "receivePath" : "api/wallet/siopv2/initPassiveIssuance/",
+      "description": "walt.id web wallet"
+    }
+  }
+}
+```
+
+### Configuration example
+
+Here's a complete example for the **verifier-config.json**:
+
+```
+{
+  "verifierUiUrl": "https://verifier.waltid.org",
+  "verifierApiUrl": "https://verifier.waltid.org/verifier-api",
   "wallets": {
     "walt.id": {
       "id": "walt.id",
