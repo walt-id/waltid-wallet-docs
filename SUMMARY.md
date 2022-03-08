@@ -10,6 +10,7 @@
 * [Quick start](getting-started/quick-start/README.md)
   * [Docker compose](getting-started/quick-start/docker-compose.md)
   * [Local build](getting-started/quick-start/local-build.md)
+  * [REST APIs](getting-started/quick-start/rest-apis.md)
 * [Public deployments](getting-started/public-deployments.md)
 
 ## Configuration and Setup
