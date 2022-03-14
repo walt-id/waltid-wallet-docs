@@ -19,10 +19,5 @@
 * [Issuer portal setup](configuration-and-setup/issuer-portal-setup.md)
 * [Verifier portal setup](configuration-and-setup/verifier-portal-setup.md)
 
-## Ecosystems interoperability
+## Ecosystems / Interoperability
 * [OIDC - OpenID Connect](ecosystems-interoperability/oidc.md)
-
-## Reference
-
-* [Configuration files](reference/build.md)
-* [REST API](reference/rest-api.md)
