@@ -99,14 +99,24 @@ To set up an issuer portal backend, it is crucial to define the DID by which iss
 
 The wallet backend intergrates a subset of commands from the **walt.id SSI Kit**, to accomplish simple **key and DID management**.
 
-### Setting up an issuer DID
-
-The following examples show typical use cases and scenarios of setting up an issuer backend for various ecosystems.
-
+{% hint style="info" %}
 For simplicity the examples will use the base command placeholder **`waltid-wallet-backend`**.
 The actual command depends on your execution environment, in the case of running the docker container this could translate to something like:
 
 `docker run -p 8080:8080 -e WALTID_DATA_ROOT=/data -v $PWD:/data waltid/ssikit-wallet-backend`
+{% endhint %}
+
+To manage keys and dids for the issuer, use the **config** command, with the command flag _--as-issuer_, or its shortcut _-i_.
+
+_E.g._:
+
+```
+waltid-wallet-backend config --as-issuer --help
+```
+
+### Setting up an issuer DID
+
+The following examples show typical use cases and scenarios of setting up an issuer backend for various ecosystems.
 
 #### EBSI/ESSIF anchored issuer DID
 
