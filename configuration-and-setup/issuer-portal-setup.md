@@ -166,8 +166,6 @@ waltid-wallet-backend config --as-issuer essif did register --did did:ebsi:zetpT
 
 4) **Set the _issuerDid_ config property**
 
-Also refer to [Issuer DID configuration](#issuer-did).
-
 _issuer-config.json_
 ```
 {
@@ -176,6 +174,8 @@ _issuer-config.json_
   [...]
 }
 ```
+
+_Also refer to [Issuer DID configuration](#issuer-did)_
 
 #### DNS/Web anchored issuer DID
 
@@ -218,15 +218,15 @@ Install this did:web at: https://walt.id/.well-known/my-issuer/did.json
 
 2) **Publish the DID document on the web server:**
 
-Copy the DID document from the above command output, on the path printed by that same command. The DID document **in this example** should be resolvable from this URL:
+Copy the DID document from the above command output, and publish it on your web server, on the path printed by that same command. 
+
+The DID document **in this example** should be resolvable from this URL:
 
 `https://walt.id/.well-known/my-issuer/did.json`
 
 _The **domain** and **path** will be different in your case._
 
 3) **Set the _issuerDid_ config property**
-
-Also refer to [Issuer DID configuration](#issuer-did).
 
 _issuer-config.json_
 ```
@@ -236,6 +236,8 @@ _issuer-config.json_
   [...]
 }
 ```
+
+_Also refer to [Issuer DID configuration](#issuer-did)_
 
 #### Importing a DID and Key using SSI Kit
 
