@@ -11,6 +11,7 @@
   * [Docker compose](getting-started/quick-start/docker-compose.md)
   * [Local build](getting-started/quick-start/local-build.md)
   * [REST APIs](getting-started/quick-start/rest-apis.md)
+  * [CLI - command line interface](getting-started/quick-start/cli.md)
 * [Public deployments](getting-started/public-deployments.md)
 
 ## Configuration and Setup

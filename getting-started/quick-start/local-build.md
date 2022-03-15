@@ -41,7 +41,7 @@ Edit the configuration files in `waltid-wallet-backend/config`, according to you
 
 ```
 cd waltid-wallet-backend
-docker run -p 8080:8080 -e WALTID_DATA_ROOT=/data -v $PWD:/data waltid/ssikit-wallet-backend
+docker run -p 8080:8080 -e WALTID_DATA_ROOT=/data -v $PWD:/data waltid/ssikit-wallet-backend run
 ```
 
 _Note:_ Running the web frontend containers standalone, makes little sense, as they depend on an API gateway to connect to the backend APIs. This API gateway is set up by the docker-compose configuration, mentioned above.
@@ -68,7 +68,7 @@ cd waltid-wallet-backend
 
 # Now run the backend using the run script:
 
-build/install/waltid-wallet-backend/bin/waltid-wallet-backend
+build/install/waltid-wallet-backend/bin/waltid-wallet-backend run
 ```
 
 ### waltid-web-wallet
