@@ -116,11 +116,9 @@ _E.g._:
 waltid-wallet-backend config --as-issuer --help
 ```
 
-### Setting up an issuer DID
-
 The following examples show typical use cases and scenarios of setting up an issuer backend for various ecosystems.
 
-#### EBSI/ESSIF anchored issuer DID
+### EBSI/ESSIF anchored issuer DID
 
 **Create a new Secp256k1 key:**
 
@@ -177,7 +175,7 @@ _issuer-config.json_
 
 _Also refer to_ [_Issuer DID configuration_](issuer-portal-setup.md#issuer-did)
 
-#### DNS/Web anchored issuer DID
+### DNS/Web anchored issuer DID
 
 **Create a new **_**did:web**_
 
@@ -240,7 +238,7 @@ _issuer-config.json_
 
 _Also refer to_ [_Issuer DID configuration_](issuer-portal-setup.md#issuer-did)
 
-#### Importing a DID and Key using SSI Kit
+### Importing a DID and Key using SSI Kit
 
 **Export the DID and Key from SSI Kit**
 
