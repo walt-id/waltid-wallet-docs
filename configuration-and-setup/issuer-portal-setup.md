@@ -4,11 +4,11 @@ To setup the issuer portal backend a few things may need to be considered and so
 
 ## Data root
 
-Since the issuer portal backend is implemented in the same service as the wallet backend, refer to the wallet backend setup section for [**details**](../configuration-and-setup/wallet-backend-setup.md#data-root).
+Since the issuer portal backend is implemented in the same service as the wallet backend, refer to the wallet backend setup section for [**details**](wallet-backend-setup.md#data-root).
 
 ## Issuer portal backend configuration
 
-The configuration of the issuer portal backend can be adapted, by modifying the file 
+The configuration of the issuer portal backend can be adapted, by modifying the file
 
 `config/issuer-config.json`
 
@@ -26,7 +26,7 @@ Configure the URLs via which the issuer portal UI and backend API will be reacha
 
 ### Issuer DID
 
-Configure the DID used to sign issued credentials. Refer to [**Initializing issuer portal backend**](#initializing-issuer-portal-backend) for options to initialize a DID for the backend.
+Configure the DID used to sign issued credentials. Refer to [**Initializing issuer portal backend**](issuer-portal-setup.md#initializing-issuer-portal-backend) for options to initialize a DID for the backend.
 
 By default, the issuer backend will choose the first available DID in its data store. To enforce, which DID to use, set it in the **issuer-config.json** like so:
 
@@ -90,8 +90,7 @@ In the future various options to configure the issuer data storage may be provid
 
 ## Binding address and port
 
-Since the issuer portal backend is implemented in the same service as the wallet backend, refer to the wallet backend setup section for [**details**](../configuration-and-setup/wallet-backend-setup.md#binding-address-and-port).
-
+Since the issuer portal backend is implemented in the same service as the wallet backend, refer to the wallet backend setup section for [**details**](wallet-backend-setup.md#binding-address-and-port).
 
 ## Initializing issuer portal backend
 
@@ -123,7 +122,7 @@ The following examples show typical use cases and scenarios of setting up an iss
 
 #### EBSI/ESSIF anchored issuer DID
 
-1) **Create a new Secp256k1 key:**
+**Create a new Secp256k1 key:**
 
 ```
 waltid-wallet-backend config --as-issuer key gen -a Secp256k1
@@ -136,7 +135,7 @@ _Sample output_
 Key "528435baadfd49559b1fe141f43bd258" generated.
 ```
 
-2) **Create a new _did:ebsi_:**
+**Create a new **_**did:ebsi**_**:**
 
 ```
 waltid-wallet-backend config --as-issuer did create -m ebsi -k 528435baadfd49559b1fe141f43bd258
@@ -150,7 +149,7 @@ DID created: did:ebsi:zetpTbH5RwCcQVAfAXGFKyF
 [...]
 ```
 
-3) **Register the DID on the EBSI blockchain:**
+**Register the DID on the EBSI blockchain:**
 
 Get the **bearer token** from `https://app.preprod.ebsi.eu/users-onboarding/`, and then execute these commands:
 
@@ -164,9 +163,10 @@ waltid-wallet-backend config --as-issuer essif auth-api --did did:ebsi:zetpTbH5R
 waltid-wallet-backend config --as-issuer essif did register --did did:ebsi:zetpTbH5RwCcQVAfAXGFKyF
 ```
 
-4) **Set the _issuerDid_ config property**
+**Set the **_**issuerDid**_** config property**
 
 _issuer-config.json_
+
 ```
 {
   [...]
@@ -175,13 +175,13 @@ _issuer-config.json_
 }
 ```
 
-_Also refer to [Issuer DID configuration](#issuer-did)_
+_Also refer to_ [_Issuer DID configuration_](issuer-portal-setup.md#issuer-did)
 
 #### DNS/Web anchored issuer DID
 
-1) **Create a new _did:web_**
+**Create a new **_**did:web**_
 
-Run the following command, **replacing the _domain_ (-d) and _path_ (-p) arguments**, matching your web server on which you can publish the did document:
+Run the following command, **replacing the **_**domain**_** (-d) and **_**path**_** (-p) arguments**, matching your web server on which you can publish the did document:
 
 ```
 waltid-wallet-backend config --as-issuer did create -m web -d "walt.id" -p "my-issuer"
@@ -216,9 +216,9 @@ DID document (below, JSON):
 Install this did:web at: https://walt.id/.well-known/my-issuer/did.json
 ```
 
-2) **Publish the DID document on the web server:**
+**Publish the DID document on the web server:**
 
-Copy the DID document from the above command output, and publish it on your web server, on the path printed by that same command. 
+Copy the DID document from the above command output, and publish it on your web server, on the path printed by that same command.
 
 The DID document **in this example** should be resolvable from this URL:
 
@@ -226,9 +226,10 @@ The DID document **in this example** should be resolvable from this URL:
 
 _The **domain** and **path** will be different in your case._
 
-3) **Set the _issuerDid_ config property**
+**Set the **_**issuerDid**_** config property**
 
 _issuer-config.json_
+
 ```
 {
   [...]
@@ -237,20 +238,20 @@ _issuer-config.json_
 }
 ```
 
-_Also refer to [Issuer DID configuration](#issuer-did)_
+_Also refer to_ [_Issuer DID configuration_](issuer-portal-setup.md#issuer-did)
 
 #### Importing a DID and Key using SSI Kit
 
-1) Export the DID and Key from SSI Kit
+**Export the DID and Key from SSI Kit**
 
 ```
 ```
 
-2) Import the DID and Key in the issuer backend
+**Import the DID and Key in the issuer backend**
 
 ```
 ```
 
-3) **Set the _issuerDid_ config property**
+**Set the **_**issuerDid**_** config property**
 
-Also refer to [Issuer DID configuration](#issuer-did).
+_Also refer to_ [_Issuer DID configuration_](issuer-portal-setup.md#issuer-did)__
