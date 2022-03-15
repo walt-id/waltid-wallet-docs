@@ -108,9 +108,7 @@ The actual command depends on your execution environment, in the case of the doc
 `docker run -p 8080:8080 -e WALTID_DATA_ROOT=/data -v $PWD:/data waltid/ssikit-wallet-backend`
 {% endhint %}
 
-To manage keys and dids for the issuer, use the **config** command, with the command flag _--as-issuer_, or its shortcut _-i_.
-
-_E.g._:
+To manage keys and dids for the issuer, use the **config** command, with the command flag _--as-issuer_, or its shortcut _-i_:
 
 ```
 waltid-wallet-backend config --as-issuer --help
@@ -120,7 +118,7 @@ The following examples show typical use cases and scenarios of setting up an iss
 
 ### EBSI/ESSIF anchored issuer DID
 
-**Create a new Secp256k1 key:**
+**Create a new _Secp256k1_ key**
 
 ```
 waltid-wallet-backend config --as-issuer key gen -a Secp256k1
@@ -133,7 +131,7 @@ _Sample output_
 Key "528435baadfd49559b1fe141f43bd258" generated.
 ```
 
-**Create a new **_**did:ebsi**_**:**
+**Create a new _did:ebsi_**
 
 ```
 waltid-wallet-backend config --as-issuer did create -m ebsi -k 528435baadfd49559b1fe141f43bd258
@@ -147,7 +145,7 @@ DID created: did:ebsi:zetpTbH5RwCcQVAfAXGFKyF
 [...]
 ```
 
-**Register the DID on the EBSI blockchain:**
+**Register the DID on the EBSI blockchain**
 
 Get the **bearer token** from `https://app.preprod.ebsi.eu/users-onboarding/`, and then execute these commands:
 
@@ -155,13 +153,11 @@ Get the **bearer token** from `https://app.preprod.ebsi.eu/users-onboarding/`, a
 echo "[bearer-token from above mentioned onboarding page]" > bearer-token.txt
 
 waltid-wallet-backend config --as-issuer essif onboard --did did:ebsi:zetpTbH5RwCcQVAfAXGFKyF bearer-token.txt
-
 waltid-wallet-backend config --as-issuer essif auth-api --did did:ebsi:zetpTbH5RwCcQVAfAXGFKyF
-
 waltid-wallet-backend config --as-issuer essif did register --did did:ebsi:zetpTbH5RwCcQVAfAXGFKyF
 ```
 
-**Set the **_**issuerDid**_** config property**
+**Set the _issuerDid_ config property**
 
 _issuer-config.json_
 
@@ -173,19 +169,19 @@ _issuer-config.json_
 }
 ```
 
-_Also refer to_ [_Issuer DID configuration_](issuer-portal-setup.md#issuer-did)
+_Also refer to [Issuer DID configuration](issuer-portal-setup.md#issuer-did)_
 
 ### DNS/Web anchored issuer DID
 
-**Create a new **_**did:web**_
+**Create a new _did:web_**
 
-Run the following command, **replacing the **_**domain**_** (-d) and **_**path**_** (-p) arguments**, matching your web server on which you can publish the did document:
+Run the following command, **replacing the _domain_ (-d) and _path_ (-p) arguments**, matching your web server on which you can publish the did document:
 
 ```
 waltid-wallet-backend config --as-issuer did create -m web -d "walt.id" -p "my-issuer"
 ```
 
-Observe the command output:
+_Observe the command output:_
 
 ```
 [...]
@@ -214,7 +210,7 @@ DID document (below, JSON):
 Install this did:web at: https://walt.id/.well-known/my-issuer/did.json
 ```
 
-**Publish the DID document on the web server:**
+**Publish the DID document on the web server**
 
 Copy the DID document from the above command output, and publish it on your web server, on the path printed by that same command.
 
@@ -224,7 +220,7 @@ The DID document **in this example** should be resolvable from this URL:
 
 _The **domain** and **path** will be different in your case._
 
-**Set the **_**issuerDid**_** config property**
+**Set the _issuerDid_ config property**
 
 _issuer-config.json_
 
@@ -236,7 +232,7 @@ _issuer-config.json_
 }
 ```
 
-_Also refer to_ [_Issuer DID configuration_](issuer-portal-setup.md#issuer-did)
+_Also refer to [Issuer DID configuration](issuer-portal-setup.md#issuer-did)_
 
 ### Importing a DID and Key using SSI Kit
 
@@ -250,6 +246,6 @@ _Also refer to_ [_Issuer DID configuration_](issuer-portal-setup.md#issuer-did)
 ```
 ```
 
-**Set the **_**issuerDid**_** config property**
+**Set the _issuerDid_ config property**
 
-_Also refer to_ [_Issuer DID configuration_](issuer-portal-setup.md#issuer-did)__
+_Also refer to [Issuer DID configuration](issuer-portal-setup.md#issuer-did)_
