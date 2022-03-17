@@ -19,9 +19,7 @@ This configuration will publish the following endpoints by default:
 * **Issuer portal** on _**\[HOSTNAME]:8082**_
   * API: /issuer-api/
 
-_Note_
-
-**\[HOSTNAME]** is your local computer name. If you use _**localhost**_ instead, some features, particularly with regards to credential exchange, will _**not**_ work correctly.
+Note: __ **\[HOSTNAME]** is your local computer name. If you use _**localhost**_ instead, some features, particularly with regards to credential exchange, will _**not**_ work correctly.
 
 Visit the `./docker` folder for adjusting the system config in the following files:
 
