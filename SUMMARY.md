@@ -3,6 +3,9 @@
 ## What is the wallet
 
 * [Introduction](README.md)
+* [Self-Sovereign Identity](what-is-the-wallet/self-sovereign-identity.md)
+* [SSI 101](what-is-the-wallet/ssi-101.md)
+* [Wallet](what-is-the-wallet/wallet.md)
 * [Functional overview](what-is-the-wallet/functional-overview.md)
 
 ## Getting started
@@ -21,4 +24,5 @@
 * [Verifier portal setup](configuration-and-setup/verifier-portal-setup.md)
 
 ## Ecosystems / Interoperability
+
 * [OIDC - OpenID Connect](ecosystems-interoperability/oidc.md)
