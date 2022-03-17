@@ -13,8 +13,8 @@
 ## Getting started
 
 * [Quick start](getting-started/quick-start/README.md)
-  * [Docker compose](getting-started/quick-start/docker-compose.md)
-  * [Local build](getting-started/quick-start/local-build.md)
+  * [Docker Compose](getting-started/quick-start/docker-compose.md)
+  * [Local Build](getting-started/quick-start/local-build.md)
   * [REST APIs](getting-started/quick-start/rest-apis.md)
   * [CLI | Command Line Interface](getting-started/quick-start/cli.md)
 * [Public deployments](getting-started/public-deployments.md)
