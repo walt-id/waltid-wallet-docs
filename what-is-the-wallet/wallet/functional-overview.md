@@ -27,9 +27,9 @@ Since there are different types of wallets, it is important to mention that our 
 
 There are three ways you can use the Wallet:
 
-1. **White Label:** The easiest and fastest way to launch a wallet is to take our web-app and rebrand it. Also, this web-based approach has a number of advantages. For example, it works on every platform/device, users do not require multiple devices and must not scan QR Codes. More importantly a web-based flow is very user friendly and leverages learned behaviour from federated identity providers (“login with Google”).
-2. **Wallet Backend:** You can also supercharge your existing applications with SSI capabilities (e.g. manage keys and credentials) by running our Wallet backend as a microservice (via APIs).
-3. **Wallet Library:** Finally, you can build your own applications, including mobile apps, by using our libraries as a direct dependency.
+![](<../../.gitbook/assets/Screenshot 2022-03-17 at 11.54.22.png>)
+
+_Note: The easiest and fastest way to launch a wallet is to take our web-app and rebrand it. Also, this web-based approach has a number of advantages. For example, it works on every platform/device, users do not require multiple devices and must not scan QR Codes. More importantly a web-based flow is very user friendly and leverages learned behaviour from federated identity providers (“login with Google”)._
 
 ## Project Sources
 
