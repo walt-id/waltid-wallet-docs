@@ -234,18 +234,66 @@ _issuer-config.json_
 
 _Also refer to_ [_Issuer DID configuration_](issuer-portal-setup.md#issuer-did)
 
-### Importing a DID and Key using SSI Kit
+### Importing an external DID and key
 
-**Export the DID and Key from SSI Kit**
+If you want to use an existing DID, that you own, for issuance, you can import it, given that you have access to the associated private key and DID document. If the DID is resolvable through the standard mechanism of the given DID method, only the private key is required.
+
+The private key should be available in **JWK or PEM format**.
+
+**Import private key from JWK file**
+
+In this example, we import a private key from the file _priv.jwk_:
 
 ```
+waltid-wallet-backend config --as-issuer key import priv.jwk
 ```
 
-**Import the DID and Key in the issuer backend**
+_Output_
 
 ```
+[...]
+Results:
+
+Key "e18e5427f7da48ce813e27ab3e5f66ad" imported.
+```
+
+Now we can import the DID, either by importing the DID document from a local JSON file, OR by resolving it from a public registry or likewise, depending on the DID method.
+
+**Option 1: Resolve and import DID**
+
+In this example, we import a **did:key**, for which the DID document can be derived without external DID registry, and associate it with the previously imported key ID:
+
+```
+waltid-wallet-backend config --as-issuer did import -k e18e5427f7da48ce813e27ab3e5f66ad -d did:key:z6MkovU6u4EpvADNVtxL21T9ocYzK8BDKyXtArskfbZkGsNe
+```
+
+**Option 2: Import DID document**
+
+In case, the DID document cannot be resolved or derived, we can also import the DID document from a local JSON file:
+
+```
+waltid-wallet-backend config --as-issuer did import -k e18e5427f7da48ce813e27ab3e5f66ad -f /path/to/did.json
+```
+
+The relevant output for **_both import options_**, will look similar to this:
+
+_Output_
+
+```
+[...]
+DID imported: did:key:z6MkovU6u4EpvADNVtxL21T9ocYzK8BDKyXtArskfbZkGsNe
 ```
 
 **Set the **_**issuerDid**_** config property**
+
+_issuer-config.json_
+
+```
+{
+  [...]
+  "issuerDid": "did:key:z6MkovU6u4EpvADNVtxL21T9ocYzK8BDKyXtArskfbZkGsNe",
+  [...]
+}
+```
 
 _Also refer to_ [_Issuer DID configuration_](issuer-portal-setup.md#issuer-did)
