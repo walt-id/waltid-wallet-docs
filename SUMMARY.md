@@ -35,3 +35,9 @@
 * [Influence the Roadmap.](contact-and-developer-relations/influence-the-roadmap..md)
 * [Contribute](contact-and-developer-relations/contribute.md)
 * [Contact Us](contact-and-developer-relations/contact-us.md)
+
+## Product Editions
+
+* [Open Source | Always Free](product-editions/open-source-or-always-free.md)
+* [Enterprise](product-editions/enterprise.md)
+* [Cloud Platform](product-editions/cloud-platform.md)
