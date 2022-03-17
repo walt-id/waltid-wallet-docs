@@ -1,4 +1,4 @@
-# Local Build
+# Local build
 
 ## Clone source
 
@@ -15,7 +15,7 @@ git clone https://github.com/walt-id/waltid-verifier-portal.git
 
 ## Docker build
 
-Each project can be easily build using docker:
+Each project can be easily build, using docker:
 
 ```
 cd waltid-wallet-backend
@@ -31,11 +31,11 @@ cd ../waltid-verifier-portal
 docker build --rm -t waltid/ssikit-verifier-portal .
 ```
 
-Now, launch the containers using the [docker-compose configuration](docker-compose.md) described in the previous section, which also sets up the necessary API mappings for the web frontends to find the API endpoints.
+Now launch the containers, using the [docker-compose configuration](../quick-start/docker-compose.md) described in the previous section, which also sets up the necessary API mappings for the web frontends to find the API endpoints.
 
-## Wallet backend standalone
+### Wallet backend standalone
 
-If you are working on one of the web frontends (e.g. web-wallet, issuer-portal, verifier-portal), you may want to run the wallet backend container standalone, to connect your local web frontend build with it.
+If you're e.g. a web developer, working on one of the web frontends (**web-wallet**, **issuer-portal**, **verifier-portal**), you may want to run the wallet backend container standalone, to connect your local web frontend build with it.
 
 Edit the configuration files in `waltid-wallet-backend/config`, according to your needs and run the container like so:
 
@@ -44,17 +44,20 @@ cd waltid-wallet-backend
 docker run -p 8080:8080 -e WALTID_DATA_ROOT=/data -v $PWD:/data waltid/ssikit-wallet-backend run
 ```
 
-Note: Running the web frontend containers standalone, makes little sense, as they depend on an API gateway to connect to the backend APIs. This API gateway is set up by the docker-compose configuration, mentioned above.
+_Note:_ Running the web frontend containers standalone, makes little sense, as they depend on an API gateway to connect to the backend APIs. This API gateway is set up by the docker-compose configuration, mentioned above.
+
 
 ## Local build
 
-### Wallet Backend (wallet-backend)
+### wallet-backend
 
-For building the project **JDK 16+** is required.
+**Requirements**:
 
-For importing, building and running the project in your Kotlin/Java IDE, refer to your IDE documentation.
+* JDK 16+
 
-For a plain Gradle build, independent of your IDE, simply execute:
+For importing and building and running the project in your Kotlin/Java IDE, refer to your IDE documentation.
+
+For a plain gradle build, independent of your IDE, simply execute:
 
 ```
 cd waltid-wallet-backend
@@ -68,14 +71,18 @@ cd waltid-wallet-backend
 build/install/waltid-wallet-backend/bin/waltid-wallet-backend run
 ```
 
-### Web Wallet (waltid-web-wallet)
+### waltid-web-wallet
 
-For building the project **NodeJs v14+** and **Yarn 1.22+** is required.
+**Requirements**
 
-In the **nuxt configuration** in `nuxt.config.js`, you may want to adjust the API proxy mappings, which by default point to either our rolling public deployment or localhost:
+* NodeJs v14+
+* Yarn 1.22+
+
+**Development build configuration**
+
+In the nuxt configuration in `nuxt.config.js`, you may want to adjust the API proxy mappings, which by default point to either our rolling public deployment or localhost:
 
 Uncomment or adjust to your needs:
-
 ```
 [...]
 proxy: {
@@ -85,7 +92,9 @@ proxy: {
 [...]
 ```
 
-**Build and run** the project using:
+**Build and run**
+
+Build and run the project using:
 
 ```
 yarn install
@@ -94,16 +103,22 @@ yarn dev
 
 The service is started on port **3000** by default.
 
-For **production build** and other build options, follow the instructions in the `README.md` of the project.
+**Production build**
 
-### Issuer Portal (waltid-issuer-portal)
+For production build and other build options, follow the instructions in the `README.md` of the project.
 
-For building the project **NodeJs v14+** and **Yarn 1.22+** is required.
+### waltid-issuer-portal
 
-In the **nuxt configuration** in `nuxt.config.js`, you may want to adjust the API proxy mappings, which by default point to either our rolling public deployment or localhost:
+**Requirements**
+
+* NodeJs v14+
+* Yarn 1.22+
+
+**Development build configuration**
+
+In the nuxt configuration in `nuxt.config.js`, you may want to adjust the API proxy mappings, which by default point to either our rolling public deployment or localhost:
 
 Uncomment or adjust to your needs:
-
 ```
 [...]
 proxy: {
@@ -117,7 +132,9 @@ proxy: {
 [...]
 ```
 
-**Build and run** the project using:
+**Build and run**
+
+Build and run the project using:
 
 ```
 yarn install
@@ -126,16 +143,23 @@ yarn dev
 
 The service is started on port **8000** by default.
 
-For **production build** and other build options, follow the instructions in the `README.md` of the project.
+**Production build**
 
-### Verifier Portal (waltid-verifier-portal)
+For production build and other build options, follow the instructions in the `README.md` of the project.
 
-For building the project **NodeJs v14+** and **Yarn 1.22+** is required.
 
-In the **nuxt configuration** in `nuxt.config.js`, you may want to adjust the API proxy mappings, which by default point to either our rolling public deployment or localhost:
+### waltid-verifier-portal
+
+**Requirements**
+
+* NodeJs v14+
+* Yarn 1.22+
+
+**Development build configuration**
+
+In the nuxt configuration in `nuxt.config.js`, you may want to adjust the API proxy mappings, which by default point to either our rolling public deployment or localhost:
 
 Uncomment or adjust to your needs:
-
 ```
 [...]
 proxy: {
@@ -147,7 +171,9 @@ proxy: {
 [...]
 ```
 
-**Build and run** the project using:
+**Build and run**
+
+Build and run the project using:
 
 ```
 yarn install
@@ -156,4 +182,6 @@ yarn dev
 
 The service is started on port **4000** by default.
 
-For **production build** and other build options, follow the instructions in the `README.md` of the project.
+**Production build**
+
+For production build and other build options, follow the instructions in the `README.md` of the project.
