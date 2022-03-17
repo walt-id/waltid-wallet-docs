@@ -6,8 +6,9 @@
 * [Self-Sovereign Identity](what-is-the-wallet/self-sovereign-identity/README.md)
   * [SSI 101](what-is-the-wallet/self-sovereign-identity/ssi-101.md)
   * [Technology & Concepts](what-is-the-wallet/self-sovereign-identity/technology-and-concepts.md)
-* [Wallet](what-is-the-wallet/wallet.md)
-* [Functional overview](what-is-the-wallet/functional-overview.md)
+* [Wallet](what-is-the-wallet/wallet/README.md)
+  * [Wallet 101](what-is-the-wallet/wallet/functional-overview.md)
+  * [Functional overview](what-is-the-wallet/wallet/functional-overview-1.md)
 
 ## Getting started
 
@@ -15,7 +16,7 @@
   * [Docker compose](getting-started/quick-start/docker-compose.md)
   * [Local build](getting-started/quick-start/local-build.md)
   * [REST APIs](getting-started/quick-start/rest-apis.md)
-  * [CLI - command line interface](getting-started/quick-start/cli.md)
+  * [CLI | Command Line Interface](getting-started/quick-start/cli.md)
 * [Public deployments](getting-started/public-deployments.md)
 
 ## Configuration and Setup

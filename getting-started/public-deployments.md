@@ -1,6 +1,10 @@
 # Public deployments
 
-**walt.id** operates the web wallet, as well as the verifier and issuer portals as public services, for demo and trial purposes.
+We operate the following as public services for demo and trial purposes only:
+
+* Web wallet
+* Verifier portal
+* Issuer portals
 
 {% hint style="danger" %}
 _The deployed services are **not meant for production use** and no guarantee for data integrity is given. All user data **may be scratched** without prior warning at our own discretion._
@@ -8,13 +12,11 @@ _The deployed services are **not meant for production use** and no guarantee for
 
 ### Stable deployment
 
-The stable deployment is updated manually whenever a stable release build is ready.
+The stable deployment is updated manually whenever a stable release build is ready:
 
-The stable deployment is available for demo and trial at:
-
-* **Web wallet:** [https://wallet.walt.id](https://wallet.walt.id)
-* **Issuer portal:** [https://issuer.walt.id](https://issuer.walt.id)
-* **Verifier portal:** [https://verifier.walt.id](https://verifier.walt.id)
+* Web wallet: [https://wallet.walt.id](https://wallet.walt.id)
+* Issuer portal: [https://issuer.walt.id](https://issuer.walt.id)
+* Verifier portal: [https://verifier.walt.id](https://verifier.walt.id)
 
 ### Rolling deployment
 
@@ -24,9 +26,9 @@ This deployment should not be considered stable and should not be used for demo 
 
 The rolling deployment is available for demo and trial at:
 
-* **Web wallet portal:** [https://wallet.waltid.org](https://wallet.waltid.org)
-* **Issuer portal:** [https://issuer.waltid.org](https://issuer.waltid.org)
-* **Verifier portal:** [https://verifier.waltid.org](https://verifier.waltid.org)
+* Web wallet: [https://wallet.waltid.org](https://wallet.waltid.org)
+* Issuer portal: [https://issuer.waltid.org](https://issuer.waltid.org)
+* Verifier portal: [https://verifier.waltid.org](https://verifier.waltid.org)
 
 ### User authentication
 
