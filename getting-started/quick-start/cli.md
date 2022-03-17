@@ -1,4 +1,4 @@
-# CLI - command line interface
+# CLI | Command Line Interface
 
 The wallet backend provides a simple command line interface, to run and/or configure the backend, including the issuer and verifier backends.
 
@@ -16,9 +16,9 @@ To get info about available options of the **run** command, use:
 `waltid-wallet-backend run --help`
 {% endhint %}
 
-## Config
+## Configuration
 
-For configuring DIDs and keys (especially for the issuer or verifier backends), the wallet backend integrates some commands from the **walt.id SSI Kit** for key and did management.
+For configuring keys and DIDs (especially for the Issuer or Verifier backends), the wallet backend integrates some commands from the SSI Kit for key and DID management.
 
 The config command lets you define the context in which you want to execute the command, by specifying the arguments _--as-issuer_, _--as-verifier_ or _--as-user \[userID]_ or their shortcuts _-i_, _-v_, _-u \[userID]_, before the respective subcommand.
 
@@ -36,8 +36,8 @@ To get info about available options of the **config** command, use:
 `waltid-wallet-backend config --help`
 {% endhint %}
 
-For more details about the integrated commands, you may want to refer to the documentation of the **SSI Kit**, which you find here:
+For more details about the integrated commands, you may want to refer to the documentation of the SSI Kit, which you find here:
 
 {% content-ref url="https://app.gitbook.com/o/ZPIzdSlXqm9n9ywE2dcK/s/1k3zreXT6Nz41D1g1C6K/" %}
-[SSIKit](https://app.gitbook.com/o/ZPIzdSlXqm9n9ywE2dcK/s/1k3zreXT6Nz41D1g1C6K/)
+[SSI Kit](https://app.gitbook.com/o/ZPIzdSlXqm9n9ywE2dcK/s/1k3zreXT6Nz41D1g1C6K/)
 {% endcontent-ref %}

@@ -8,6 +8,7 @@
   * [Technology & Concepts](what-is-the-wallet/self-sovereign-identity/technology-and-concepts.md)
 * [Wallet](what-is-the-wallet/wallet/README.md)
   * [Wallet 101](what-is-the-wallet/wallet/functional-overview.md)
+  * [Architecture](what-is-the-wallet/wallet/architecture.md)
   * [Functional overview](what-is-the-wallet/wallet/functional-overview-1.md)
 
 ## Getting started

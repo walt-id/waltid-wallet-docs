@@ -1,50 +1,42 @@
 # Wallet 101
 
-The Wallet is a custodial wallet that enables end users to manage their keys, Decentralized Identifiers (DIDs) and Verifiable Credentials/Presentations (VCs, VPs).
+## What is the Wallet?
 
-The Wallet provides storage and management of SSI data, as well as, an integration of credential exchange protocols (e.g. OIDC, SIOP) for credential issuance and presentation exchange.
+The Wallet is **everything you need to launch identity wallets**.
 
-We provide
+What you need to know about the Wallet:
 
-* Wallet backend service, implementing the business logic and RESTful APIs: [waltid-wallet-backend](https://github.com/walt-id/waltid-wallet-backend)
-* Web Wallet frontend, implementing the user experience: [waltid-web-wallet](https://github.com/walt-id/waltid-web-wallet)
+* It is **open source (Apache 2)**. You can use the code for free and without limitations. &#x20;
+* It is an **out-of-the-box solution** that you can simply re-use or even white-label such as for building pilot projects quickly.
+* It is **customisable** in a sense that you can individualise the app based on your requirements: You can rebrand the app, build your own UI and add new features. ****&#x20;
+* It is **composable** in a sense that you can plug your existing (d)apps into the wallet backend in order to supercharge your (d)apps with SSI capabilities.&#x20;
+* It **abstracts complexity** such as low-level functionality related to key handling, data storage, signing and interactions with third party systems.
+* It is **built on open standards** to ensure interoperability and prevent lock-in effects.
+* It is **flexible** in a sense that you can deploy and run the Wallet on-premise, in your (multi) cloud environment or directly integrate our libraries.&#x20;
+* It enables you to **use different identity ecosystems** like Europe’s emerging identity ecosystem ([EBSI, ESSIF](https://ec.europa.eu/digital-building-blocks/wikis/display/ebsi)) in anticipation of a multi-ecosystem future.
 
-Additionally, we provide reference implementations of verifier and issuer web portals, showcasing the credential issuance and credential presentation flows: [waltid-issuer-portal](https://github.com/walt-id/waltid-issuer-portal) and [waltid-verifier-portal](https://github.com/walt-id/waltid-verifier-portal), where the backend business logic and APIs of the verifier and issuer portals are integrated in the _wallet-backend_ service.
+## How does the Wallet work?
+
+You can think about the Wallet as **a secure data hub for organizations and individuals** that enables users to act as a Holder, i.e. to store, manage and share keys, identity data (e.g. Verifiable Credentials) and other secrets.&#x20;
+
+Practically speaking, the Wallet is a tool that allows users to **collect and present identity data** to access services (e.g. sign up, login, check-out) or procure products in a seamless and privacy preserving fashion. To enable the exchange of data between parties, the Wallet integrates credential exchange protocols (e.g. OIDC, SIOP) for credential issuance and presentation exchange.
+
+Since there are different types of wallets, it is important to mention that our Wallet is a so-called **“custodial” wallet**, i.e. keys and data are ultimately stored by the provider of the Wallet. While this means less control for end-users, it also means a better user experience (e.g. no need to handle private keys or seed phrases) and less risk (e.g. loss of data). Also, end-users enjoy full data portability, i.e. they can switch wallets (and take their keys and data with them) at any time without having to fear lock-in effects.
+
+## Ways of using the Wallet
+
+There are **three editions of the Wallet**:
+
+1. **White Label:** The easiest and fastest way to launch a wallet is to take our web-app and rebrand it. Also, this web-based approach has a number of advantages. For example, it works on every platform/device, users do not require multiple devices and must not scan QR Codes. More importantly a web-based flow is very user friendly and leverages learned behaviour from federated identity providers (“login with Google”).
+2. **Wallet Backend:** You can also supercharge your existing applications with SSI capabilities (e.g. manage keys and credentials) by running our Wallet backend as a microservice (via APIs).
+3. **Wallet Library:** Finally, you can build your own applications, including mobile apps, by using our libraries as a direct dependency.
 
 ## Project sources
 
-* **Web wallet frontend:** [waltid-web-wallet](https://github.com/walt-id/waltid-web-wallet)
-* **Wallet API backend** [waltid-wallet-backend](https://github.com/walt-id/waltid-wallet-backend) _(includes issuer and verifier API backends)_
-* **Verifier web portal:** [waltid-verifier-portal](https://github.com/walt-id/waltid-verifier-portal)
-* **Issuer web portal:** [waltid-issuer-portal](https://github.com/walt-id/waltid-issuer-portal)
+We provide
 
-## Web wallet
+* Wallet backend service, implementing the business logic and RESTful APIs: [waltid-wallet-backend](https://github.com/walt-id/waltid-wallet-backend) (including Issuer and Verifier API backends)
+* Web Wallet frontend, implementing the user experience: [waltid-web-wallet](https://github.com/walt-id/waltid-web-wallet)
 
-* **Wallet web app**
-  * Web based user interface for managing credentials and DIDs
-* **User management**
-  * Authorization is currently mocked and not production ready
-  * User-context switching and user-specific encapsulated data storage
-* **Basic user data management**
-  * List dids
-  * List credentials
-* **Verifiable Credential and Presentation exchange**
-  * Support for credential presentation exchange based on OIDC-SIOPv2 spec
+Additionally, we provide reference implementations of verifier and issuer web portals, showcasing the credential issuance and credential presentation flows: [waltid-issuer-portal](https://github.com/walt-id/waltid-issuer-portal) and [waltid-verifier-portal](https://github.com/walt-id/waltid-verifier-portal), where the backend business logic and APIs of the verifier and issuer portals are integrated in the _wallet-backend_ service.&#x20;
 
-## Verifier portal
-
-* **Verifier web portal**
-  * Web based user interface for requesting credential presentations through the web wallet
-* **Wallet configuration**
-  * Possibility to configure list of supported wallets (defaults to walt.id web wallet)
-* **Presentation exchange**
-  * Support for presentation exchange based on OIDC-SIOPv2 spec
-
-## Issuer portal
-
-* **Issuer web portal**
-  * Web based user interface for issuing credentials to the web wallet
-* **Wallet configuration**
-  * Possibility to configure list of supported wallets (defaults to walt.id web wallet)
-* **Verifiable credential issuance**
-  * Support for issuing verifiable credentials to the web wallet, based on OIDC-SIOPv2 spec
