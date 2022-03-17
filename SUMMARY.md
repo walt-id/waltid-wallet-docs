@@ -3,8 +3,9 @@
 ## What is the wallet
 
 * [Introduction](README.md)
-* [Self-Sovereign Identity](what-is-the-wallet/self-sovereign-identity.md)
-* [SSI 101](what-is-the-wallet/ssi-101.md)
+* [Self-Sovereign Identity](what-is-the-wallet/self-sovereign-identity/README.md)
+  * [SSI 101](what-is-the-wallet/self-sovereign-identity/ssi-101.md)
+  * [Technology & Concepts](what-is-the-wallet/self-sovereign-identity/technology-and-concepts.md)
 * [Wallet](what-is-the-wallet/wallet.md)
 * [Functional overview](what-is-the-wallet/functional-overview.md)
 
