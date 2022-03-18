@@ -16,7 +16,7 @@
 
 ## Getting started
 
-* [Quick start](getting-started/quick-start/README.md)
+* [Quick Start](getting-started/quick-start/README.md)
   * [Build](getting-started/quick-start/local-build/README.md)
     * [Docker Build](getting-started/quick-start/local-build/docker-build.md)
     * [Local Build](getting-started/quick-start/local-build/local-build.md)
