@@ -4,10 +4,12 @@
 
 * [Introduction](README.md)
 * [Self-Sovereign Identity](what-is-the-wallet/self-sovereign-identity/README.md)
-  * [SSI 101](what-is-the-wallet/self-sovereign-identity/ssi-101.md)
+  * [SSI Basics](what-is-the-wallet/self-sovereign-identity/ssi-101.md)
   * [Technology & Concepts](what-is-the-wallet/self-sovereign-identity/technology-and-concepts.md)
 * [Wallet](what-is-the-wallet/wallet/README.md)
-  * [Wallet 101](what-is-the-wallet/wallet/functional-overview.md)
+  * [Wallet Basics](what-is-the-wallet/wallet/functional-overview/README.md)
+    * [Overview](what-is-the-wallet/wallet/functional-overview/overview.md)
+    * [Functionality](what-is-the-wallet/wallet/functional-overview/functionality.md)
   * [Architecture](what-is-the-wallet/wallet/architecture.md)
   * [Functional overview](what-is-the-wallet/wallet/functional-overview-1.md)
 
@@ -39,6 +41,6 @@
 
 ## Product Editions
 
-* [Open Source | Always Free](product-editions/open-source-or-always-free.md)
+* [Open Source | Always Free](product-editions/open-source-or-always-free.md)
 * [Enterprise](product-editions/enterprise.md)
 * [Cloud Platform](product-editions/cloud-platform.md)

@@ -4,15 +4,13 @@ description: Learn about the technologies and concepts on which SSI is based.
 
 # Technology & Concepts
 
-## TL;DR
-
 Understanding SSI requires the understanding of a few core concepts:
 
 * **Registries**, which serve as a shared and trusted record of certain information. In other words, they serve as a “layer of trust” and a “single source of truth”.
 * **Cryptographic keys**, which convey control over digital identities and enable core functionality such as encryption and authentication.
 * **Decentralized Identifiers (DIDs)**, which establish a public key infrastructure by linking keys to unique identifiers that allow different parties to find and interact with each other.
 * **Verifiable Credentials** **(VCs)** which are digital identity documents that can easily and securely be shared with and verified (incl. validity, integrity, authenticity, provenance) by anyone in a privacy preserving way. Importantly, they are never (!) stored on a blockchain due to privacy and compliance reasons.
-* **Protocols** enable the exchange of data (VCs) between different parties.&#x20;
+* **Protocols** enable the exchange of data (VCs) between different parties.
 * **Wallets**, which store our keys (control) and VCs (identity data) and enable the management and sharing of our digital identities and data via easy-to-use applications.
 
 The following graphic shows the SSI tech stack:
@@ -20,8 +18,6 @@ The following graphic shows the SSI tech stack:
 ![](<../../.gitbook/assets/Screenshot 2022-03-16 at 13.16.32.png>)
 
 The following graphic shows how SSI works and highlights the core concepts (in blue):
-
-
 
 ![](https://images.squarespace-cdn.com/content/v1/609c0ddf94bcc0278a7cbdb4/6276f3d0-2d29-4664-be03-65d555fb824c/Screenshot+2022-03-09+at+08.26.35.png?format=2500w)
 
@@ -59,7 +55,7 @@ DIDs are **unique identifiers** (URIs) which are standardised by the [W3C](https
 
 DIDs are important because they **establish a (distributed) public key infrastructure** (DPKI) and allow parties to find each other, authenticate and encrypt and verifiably sign data.
 
-A variety of “**DID methods**'', which are different implementations of the DID specification, exist. Considering that DID methods differ in terms of how they are created, registered and resolved, different methods come with different advantages and disadvantages.&#x20;
+A variety of “**DID methods**'', which are different implementations of the DID specification, exist. Considering that DID methods differ in terms of how they are created, registered and resolved, different methods come with different advantages and disadvantages.
 
 For example, while DIDs are often anchored on Registries, such as EBSI (did:ebsi) or the Domain Name Service (did:web), new methods emerged that do not require Registries because their distribution is based on peer-to-peer interactions (e.g. did:key).
 
@@ -162,7 +158,7 @@ Here is an illustrative example of a VC:
 
 **VPs** are composed and signed by “Holders”. They can **contain identity information from one or multiple VCs** and are created for the purpose of presenting them to a “Verifier”. In other words, VPs are the format with which the contents of VCs are shared by the person or organisation that is described by the VCs.
 
-For example, a graduate presents a VP to an employer that contains information from her digital passport and diplomas.&#x20;
+For example, a graduate presents a VP to an employer that contains information from her digital passport and diplomas.
 
 VPs typically contain at least:
 
@@ -257,4 +253,3 @@ Our solutions enable you to use different data exchange protocols like OIDC/SIOP
 {% endhint %}
 
 ##
-
