@@ -31,9 +31,9 @@
 * [Issuer portal setup](configuration-and-setup/issuer-portal-setup.md)
 * [Verifier portal setup](configuration-and-setup/verifier-portal-setup.md)
 
-## Ecosystems / Interoperability
+## Concepts
 
-* [OIDC - OpenID Connect](ecosystems-interoperability/oidc.md)
+* [OIDC - OpenID Connect](concepts/oidc.md)
 
 ## CONTACT & DEVELOPER RELATIONS
 
