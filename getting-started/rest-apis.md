@@ -4,7 +4,7 @@ Assuming you have managed to run the wallet backend, you may want to explore the
 
 ## Binding address and port
 
-Refer to the [wallet backend configuration section](../../configuration-and-setup/wallet-backend-setup.md#binding-address-and-port), to find out details about binding address and port on which the REST APIs are exposed.
+Refer to the [wallet backend configuration section](../configuration-and-setup/wallet-backend-setup.md#binding-address-and-port), to find out details about binding address and port on which the REST APIs are exposed.
 
 ## API services
 
@@ -22,7 +22,7 @@ A **swagger documentation** _(including the issuer and verifier API documentatio
 
 ### Publicly deployed API documentation
 
-You can find the publicly deployed API documentations for our [**stable and rolling deployments**](../public-deployments.md) at:
+You can find the publicly deployed API documentations for our [**stable and rolling deployments**](public-deployments.md) at:
 
 *   **Rolling deployment:**
 

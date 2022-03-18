@@ -16,10 +16,11 @@
 ## Getting started
 
 * [Quick start](getting-started/quick-start/README.md)
+  * [Build](getting-started/quick-start/local-build.md)
   * [Docker Compose](getting-started/quick-start/docker-compose.md)
-  * [Local Build](getting-started/quick-start/local-build.md)
-  * [REST APIs](getting-started/quick-start/rest-apis.md)
-  * [CLI | Command Line Interface](getting-started/quick-start/cli.md)
+  * [Dependency (JVM)](getting-started/quick-start/dependency-jvm.md)
+* [CLI | Command Line Interface](getting-started/cli.md)
+* [REST APIs](getting-started/rest-apis.md)
 * [Public deployments](getting-started/public-deployments.md)
 
 ## Configuration and Setup
