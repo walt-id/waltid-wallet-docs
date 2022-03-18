@@ -118,7 +118,7 @@ The following examples show typical use cases and scenarios of setting up an iss
 
 ### EBSI/ESSIF anchored issuer DID
 
-**Create a new **_**Secp256k1**_** key**
+**Create a new _Secp256k1_ key**
 
 ```
 waltid-wallet-backend config --as-issuer key gen -a Secp256k1
@@ -131,7 +131,7 @@ _Sample output_
 Key "528435baadfd49559b1fe141f43bd258" generated.
 ```
 
-**Create a new **_**did:ebsi**_
+**Create a new _did:ebsi_**
 
 ```
 waltid-wallet-backend config --as-issuer did create -m ebsi -k 528435baadfd49559b1fe141f43bd258
@@ -157,7 +157,7 @@ waltid-wallet-backend config --as-issuer essif auth-api --did did:ebsi:zetpTbH5R
 waltid-wallet-backend config --as-issuer essif did register --did did:ebsi:zetpTbH5RwCcQVAfAXGFKyF
 ```
 
-**Set the **_**issuerDid**_** config property**
+**Set the _issuerDid_ config property**
 
 _issuer-config.json_
 
@@ -173,9 +173,9 @@ _Also refer to_ [_Issuer DID configuration_](issuer-portal-setup.md#issuer-did)
 
 ### DNS/Web anchored issuer DID
 
-**Create a new **_**did:web**_
+**Create a new _did:web_**
 
-Run the following command, **replacing the **_**domain**_** (-d) and **_**path**_** (-p) arguments**, matching your web server on which you can publish the did document:
+Run the following command, **replacing the _domain_ (-d) and _path_ (-p) arguments**, matching your web server on which you can publish the did document:
 
 ```
 waltid-wallet-backend config --as-issuer did create -m web -d "walt.id" -p "my-issuer"
@@ -220,7 +220,7 @@ The DID document **in this example** should be resolvable from this URL:
 
 _The **domain** and **path** will be different in your case._
 
-**Set the **_**issuerDid**_** config property**
+**Set the _issuerDid_ config property**
 
 _issuer-config.json_
 
@@ -284,7 +284,7 @@ _Output_
 DID imported: did:key:z6MkovU6u4EpvADNVtxL21T9ocYzK8BDKyXtArskfbZkGsNe
 ```
 
-**Set the **_**issuerDid**_** config property**
+**Set the _issuerDid_ config property**
 
 _issuer-config.json_
 
