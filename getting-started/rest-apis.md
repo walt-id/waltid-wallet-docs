@@ -1,5 +1,9 @@
 # REST APIs
 
+****[phil](https://app.gitbook.com/u/Xy5PETDzUVT9yjUrLtjs53z9wvW2 "mention") **Please add info on the mobile SDKs.**
+
+****
+
 Assuming you have managed to run the wallet backend, you may want to explore the REST APIs exposed by the service.
 
 ## Binding address and port
