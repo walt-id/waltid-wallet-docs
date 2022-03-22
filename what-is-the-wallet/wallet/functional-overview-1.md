@@ -1,12 +1,14 @@
 # Functional overview
 
+[phil](https://app.gitbook.com/u/Xy5PETDzUVT9yjUrLtjs53z9wvW2 "mention")**please explain mobile wallet SDKs**
 
 ## Web wallet
+
 * **Wallet web app**
-    * Web based user interface for managing credentials and DIDs
+  * Web based user interface for managing credentials and DIDs
 * **User management**
-    * Authorization is currently mocked and not production ready
-    * User-context switching and user-specific encapsulated data storage
+  * Authorization is currently mocked and not production ready
+  * User-context switching and user-specific encapsulated data storage
 * **Basic user data management**
   * List dids
   * List credentials
@@ -14,14 +16,16 @@
   * Support for credential presentation exchange based on OIDC-SIOPv2 spec
 
 ## Verifier portal
+
 * **Verifier web portal**
   * Web based user interface for requesting credential presentations through the web wallet
 * **Wallet configuration**
-  * Possibility to configure list of supported wallets (defaults to walt.id web wallet) 
+  * Possibility to configure list of supported wallets (defaults to walt.id web wallet)
 * **Presentation exchange**
   * Support for presentation exchange based on OIDC-SIOPv2 spec
 
 ## Issuer portal
+
 * **Issuer web portal**
   * Web based user interface for issuing credentials to the web wallet
 * **Wallet configuration**
