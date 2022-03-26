@@ -1,6 +1,6 @@
 # Docker Build
 
-Each project can be easily build using docker:
+Each project can be easily built using docker:
 
 ```
 cd waltid-wallet-backend
