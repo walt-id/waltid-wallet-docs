@@ -33,7 +33,6 @@
 
 ## Concepts
 
-* [Page 1](concepts/page-1.md)
 * [OIDC - OpenID Connect](concepts/oidc.md)
 
 ## CONTACT & DEVELOPER RELATIONS
