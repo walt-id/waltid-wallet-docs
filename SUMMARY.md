@@ -11,7 +11,6 @@
     * [Overview](what-is-the-wallet/wallet/functional-overview/overview.md)
     * [Functionality](what-is-the-wallet/wallet/functional-overview/functionality.md)
   * [Architecture](what-is-the-wallet/wallet/architecture.md)
-  * [Functional overview](what-is-the-wallet/wallet/functional-overview-1.md)
 * [Issuer & Verifier Portals](what-is-the-wallet/issuer-and-verifier-portals.md)
 
 ## Getting started
