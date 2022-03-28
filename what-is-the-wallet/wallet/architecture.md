@@ -1,5 +1,10 @@
 # Architecture
 
-[Severin Stampler](https://app.gitbook.com/u/QbVrGMSggtaXNsjpphAURnvy9dB2 "mention") Please explain relation between SSI Kit and Wallet.
+The wallet backend, as well as the issuer and verifier backends, are built as abstraction layers on top of the _walt.id SSI Kit_.
 
-![](<../../.gitbook/assets/Screenshot 2022-03-18 at 16.04.39.png>)
+Based on the _SSI Kit_, the backends provide **user data separation** (user contexts of the underlying data stores) and **high-level APIs** for the interaction with the **web frontends** and the **credential exchange protocols** such as OIDC and SIOP.
+
+The wallet backend can be seen as an abstraction over the Custodian component of the SSI Kit, whereas the issuer and verifier backends build on top of the Signatory and Auditor components, respectively.
+
+
+![Wallet architecture](./architecture.png)
