@@ -25,7 +25,7 @@ title
 Wallet Architecture
 end title
 
-frame "wallet-backend" {
+frame "wallet-backend" #AliceBlue {
   interface "High-level APIs" as API
   [Wallet Backend] as WB
   [Verifier Backend] as VB
@@ -33,14 +33,14 @@ frame "wallet-backend" {
   [Wallet Context Manager] as WCTX
 }
 
-frame "SSI Kit" {
+frame "SSI Kit" #Azure {
   [SSI Kit Context] as SCTX
   [Custodian] as CU
   [Signatory] as SI
   [Auditor] as AU
 }
 
-database "Data store" {
+database "Data store" #WhiteSmoke {
   frame "User Stores" {
     [User Store (A)...] as USA
   }
