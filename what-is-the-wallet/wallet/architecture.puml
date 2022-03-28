@@ -42,7 +42,7 @@ frame "SSI Kit" #Azure {
 
 database "Data store" #WhiteSmoke {
   frame "User Stores" {
-    [User Store (A)...] as USA
+    [User Store (A)] as USA
   }
   [Issuer Store] as IS
   [Verifier Store] as VS
