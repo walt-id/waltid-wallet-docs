@@ -13,14 +13,15 @@ Since there are different types of wallets, it is important to mention that our 
 The Wallet provides the following high-level functionalities:
 
 * **Web app**
-  * Web-based user interface (UI) for managing credentials and DIDs
+  * Web-based user interface (UI) for managing credentials and DIDs.
 * **User context separation**
-  * Separation of user contexts in the data stores (key store, credential store, DID store)
+  * Separation of user contexts in the data stores (key store, credential store, DID store).
 * **User data management**
   * DIDs
   * Credentials
-* **Ecosystems integration**
-  * EBSI/ESSIF
+* **Ecosystems integrations**
+  * did:ebsi
+    * DID creation
     * DID registration
   * did:web
     * DID creation
