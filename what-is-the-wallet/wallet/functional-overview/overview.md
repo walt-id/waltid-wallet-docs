@@ -9,4 +9,4 @@ Here are the most important things to know about the Wallet:
 * It **abstracts complexity** such as low-level functionality related to key handling, data storage, signing and interactions with third party systems.
 * It is **built on open standards** to ensure interoperability and prevent lock-in effects.
 * It is **flexible** in a sense that you can deploy and run the Wallet on-premise, in your (multi) cloud environment or directly integrate our libraries.
-* It enables you to **use different identity ecosystems** like Europe’s emerging identity ecosystem ([EBSI, ESSIF](https://ec.europa.eu/digital-building-blocks/wikis/display/ebsi)) in anticipation of a multi-ecosystem future.
+* It enables you to **use different identity ecosystems** like Europe’s emerging identity ecosystem ([EBSI, ESSIF](https://ec.europa.eu/digital-building-blocks/wikis/display/ebsi)) in anticipation of a multi-ecosystem future. (Consult the [SSI Kit documentation](https://app.gitbook.com/o/ZPIzdSlXqm9n9ywE2dcK/s/1k3zreXT6Nz41D1g1C6K/) to find out which ecosystems the Wallet supports.)&#x20;
