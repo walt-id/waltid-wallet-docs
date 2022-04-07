@@ -8,11 +8,9 @@ Refer to the [wallet backend configuration section](../configuration-and-setup/w
 
 ## API services
 
-**Wallet API** is available under the context path `/api/`
-
-**Verifier portal API** is available under the context path `/verifier-api/`
-
-**Issuer portal API** is available under the context path `/issuer-api/`
+* **Wallet API** is available under the context path `/api/`
+* **Verifier portal API** is available under the context path `/verifier-api/`
+* **Issuer portal API** is available under the context path `/issuer-api/`
 
 ## Swagger API documentation
 
