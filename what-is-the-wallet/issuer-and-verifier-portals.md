@@ -2,7 +2,7 @@
 
 The issuer and verifier portals are **demo web portals** showcasing the scenarios of getting verifiable credentials issued into the wallet by a certified issuer or presenting a credential to a relying party. They can be used as reference implementations for issuers and verifiers to implement their own service platforms.
 
-For credential and presentation exchange, we make use of the OIDC/SIOP protocols described in [OIDC](../concepts/oidc.md).
+For credential and presentation exchange, we make use of the OIDC/SIOP protocols described in [OIDC](../concepts/oidc/).
 
 ## Functional overview
 
@@ -28,8 +28,8 @@ For credential and presentation exchange, we make use of the OIDC/SIOP protocols
 
 Like the wallet-backend, the issuer and verifier portals are built on top of the SSI Kit, to leverage its functionality for issuing, signing and verifying credentials, provided by the Signatory and Auditor components resepectively.
 
-Since the issuer and verifier backends are currently integrated with the wallet-backend project, refer to the [Architecture](../what-is-the-wallet/wallet/architecture.md) section for details.
+Since the issuer and verifier backends are currently integrated with the wallet-backend project, refer to the [Architecture](wallet/architecture.md) section for details.
 
 To save you the roundtrip, in case you ended up on this page, here's the architecture diagram once more:
 
-![Architecture](../what-is-the-wallet/wallet/architecture.png)
+![Architecture](wallet/architecture.png)

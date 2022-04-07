@@ -33,7 +33,10 @@
 
 ## Concepts
 
-* [OIDC - OpenID Connect](concepts/oidc.md)
+* [OpenID Connect (OIDC)](concepts/oidc/README.md)
+  * [OIDC for Credential Issuance](concepts/oidc/oidc.md)
+  * [OIDC for Verifiable Presentations (SIOP)](concepts/oidc/oidc-1.md)
+  * [Issuance via OIDC for Verifiable Presentations (SIOP)](concepts/oidc/oidc-2.md)
 
 ## CONTACT & DEVELOPER RELATIONS
 
