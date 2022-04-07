@@ -1,9 +1,5 @@
 # REST APIs
 
-****[phil](https://app.gitbook.com/u/Xy5PETDzUVT9yjUrLtjs53z9wvW2 "mention") **Please add info on the mobile SDKs.**
-
-****
-
 Assuming you have managed to run the wallet backend, you may want to explore the REST APIs exposed by the service.
 
 ## Binding address and port
@@ -20,17 +16,11 @@ Refer to the [wallet backend configuration section](../configuration-and-setup/w
 
 ## Swagger API documentation
 
-A **swagger documentation** _(including the issuer and verifier API documentation)_ is available under
+A **swagger documentation** _(including the issuer and verifier API documentation)_ is available under `/api/swagger`
 
-`/api/swagger`
+## Publicly deployed API documentation
 
-### Publicly deployed API documentation
+You can find the publicly deployed API documentations for our [stable and rolling deployments](public-deployments.md):
 
-You can find the publicly deployed API documentations for our [**stable and rolling deployments**](public-deployments.md) at:
-
-*   **Rolling deployment:**
-
-    [https://wallet.waltid.org/api/swagger](https://wallet.waltid.org/api/swagger)
-*   **Stable deployment**
-
-    [https://wallet.walt.id/api/swagger](https://wallet.walt.id/api/swagger)
+* **Rolling deployment:** [https://wallet.waltid.org/api/swagger](https://wallet.waltid.org/api/swagger)
+* **Stable deployment:** [https://wallet.walt.id/api/swagger](https://wallet.walt.id/api/swagger)
