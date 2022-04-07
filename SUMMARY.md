@@ -4,10 +4,10 @@
 
 * [Introduction](README.md)
 * [Self-Sovereign Identity](what-is-the-wallet/self-sovereign-identity/README.md)
-  * [SSI Basics](what-is-the-wallet/self-sovereign-identity/ssi-101.md)
+  * [SSI | Basics](what-is-the-wallet/self-sovereign-identity/ssi-101.md)
   * [Technology & Concepts](what-is-the-wallet/self-sovereign-identity/technology-and-concepts.md)
 * [Wallet](what-is-the-wallet/wallet/README.md)
-  * [Wallet Basics](what-is-the-wallet/wallet/functional-overview/README.md)
+  * [Wallet  Basics](what-is-the-wallet/wallet/functional-overview/README.md)
     * [Overview](what-is-the-wallet/wallet/functional-overview/overview.md)
     * [Functionality](what-is-the-wallet/wallet/functional-overview/functionality.md)
   * [Architecture](what-is-the-wallet/wallet/architecture.md)
