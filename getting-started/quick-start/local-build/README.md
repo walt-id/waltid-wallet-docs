@@ -2,7 +2,7 @@
 
 ## Clone source
 
-In order to build the wallet or one of the affiliated projects, you have to clone the project source on your local machine, e.g.:
+In order to build the Wallet Kit ("wallet backend") or one of the affiliated projects, you have to clone the project source on your local machine, e.g.:
 
 ```
 mkdir waltid
