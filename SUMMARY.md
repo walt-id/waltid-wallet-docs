@@ -1,6 +1,6 @@
 # Table of contents
 
-## Wallet Kit
+## What is the Wallet Kit? <a href="#wallet-kit" id="wallet-kit"></a>
 
 * [Introduction](README.md)
 * [Self-Sovereign Identity](wallet-kit/self-sovereign-identity/README.md)
