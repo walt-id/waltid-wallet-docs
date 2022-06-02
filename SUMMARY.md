@@ -1,19 +1,19 @@
 # Table of contents
 
-## What is the wallet
+## Wallet Kit
 
 * [Introduction](README.md)
-* [Self-Sovereign Identity](what-is-the-wallet/self-sovereign-identity/README.md)
-  * [SSI | Basics](what-is-the-wallet/self-sovereign-identity/ssi-101.md)
-  * [Technology & Concepts](what-is-the-wallet/self-sovereign-identity/technology-and-concepts.md)
-* [Wallet Kit](what-is-the-wallet/wallet/README.md)
-  * [Wallet Kit | Basics](what-is-the-wallet/wallet/functional-overview/README.md)
-    * [Overview](what-is-the-wallet/wallet/functional-overview/overview.md)
-    * [Functionality](what-is-the-wallet/wallet/functional-overview/functionality.md)
-  * [Architecture](what-is-the-wallet/wallet/architecture.md)
-* [Issuer & Verifier Portals](what-is-the-wallet/issuer-and-verifier-portals/README.md)
-  * [Functionality](what-is-the-wallet/issuer-and-verifier-portals/functionality.md)
-  * [Architecture](what-is-the-wallet/issuer-and-verifier-portals/architecture.md)
+* [Self-Sovereign Identity](wallet-kit/self-sovereign-identity/README.md)
+  * [SSI | Basics](wallet-kit/self-sovereign-identity/ssi-101.md)
+  * [Technology & Concepts](wallet-kit/self-sovereign-identity/technology-and-concepts.md)
+* [Wallet Kit](wallet-kit/wallet/README.md)
+  * [Wallet Kit | Basics](wallet-kit/wallet/functional-overview/README.md)
+    * [Overview](wallet-kit/wallet/functional-overview/overview.md)
+    * [Functionality](wallet-kit/wallet/functional-overview/functionality.md)
+  * [Architecture](wallet-kit/wallet/architecture.md)
+* [Issuer & Verifier Portals](wallet-kit/issuer-and-verifier-portals/README.md)
+  * [Functionality](wallet-kit/issuer-and-verifier-portals/functionality.md)
+  * [Architecture](wallet-kit/issuer-and-verifier-portals/architecture.md)
 
 ## Getting started
 

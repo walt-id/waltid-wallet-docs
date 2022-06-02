@@ -6,4 +6,4 @@ Since the issuer and verifier backends are currently integrated with the wallet-
 
 To save you the roundtrip, in case you ended up on this page, here's the architecture diagram once more:
 
-![Architecture](../wallet/architecture.png)
+![Architecture](../../what-is-the-wallet/wallet/architecture.png)
