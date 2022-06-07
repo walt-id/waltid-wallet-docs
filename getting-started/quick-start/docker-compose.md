@@ -4,18 +4,18 @@
 
 If you are working on one of the web frontends (e.g. web-wallet, issuer-portal, verifier-portal), you may want to run the wallet backend container standalone, to connect your local web frontend build with it.
 
-Edit the configuration files in `waltid-wallet-backend/config`, according to your needs and run the container like so:
+Edit the configuration files in `waltid-walletkit/config`, according to your needs and run the container like so:
 
 ```
-cd waltid-wallet-backend
-docker run -p 8080:8080 -e WALTID_DATA_ROOT=/data -v $PWD:/data waltid/ssikit-wallet-backend run
+cd waltid-walletkit
+docker run -p 8080:8080 -e WALTID_DATA_ROOT=/data -v $PWD:/data waltid/walletkit run
 ```
 
 Note: Running the web frontend containers standalone, makes little sense, as they depend on an API gateway to connect to the backend APIs. This API gateway is set up by the docker-compose configuration, mentioned above.
 
 ## Docker Compose
 
-The easiest and fastest way to get the wallet **backend**, **frontend**, and **issuer** and **verifier portals** started, is by using our docker-compose configuration, located in the [waltid-wallet-backend](https://github.com/walt-id/waltid-wallet-backend) project, in the subfolder:
+The easiest and fastest way to get the wallet **backend**, **frontend**, and **issuer** and **verifier portals** started, is by using our docker-compose configuration, located in the [waltid-walletkit](https://github.com/walt-id/waltid-walletkit) project, in the subfolder:
 
 `./docker/`.
 

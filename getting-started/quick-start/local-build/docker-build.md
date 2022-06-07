@@ -3,8 +3,8 @@
 Each project can be easily built using docker:
 
 ```
-cd waltid-wallet-backend
-docker build --rm -t waltid/ssikit-wallet-backend .
+cd waltid-walletkit
+docker build --rm -t waltid/walletkit .
 
 cd ../waltid-web-wallet
 docker build --rm -t waltid/ssikit-web-wallet .

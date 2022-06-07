@@ -7,13 +7,13 @@ The wallet backend provides a simple command line interface, to run and/or confi
 To run the backend service type
 
 ```
-waltid-wallet-backend run
+waltid-walletkit run
 ```
 
 {% hint style="info" %}
 To get info about available options of the **run** command, use:
 
-`waltid-wallet-backend run --help`
+`waltid-walletkit run --help`
 {% endhint %}
 
 ## Configuration
@@ -25,7 +25,7 @@ The config command lets you define the context in which you want to execute the 
 _E.g._
 
 ```
-waltid-wallet-backend config --as-issuer did list
+waltid-walletkit config --as-issuer did list
 ```
 
 This command lists the DIDs available in the context of the _issuer backend_.
@@ -33,7 +33,7 @@ This command lists the DIDs available in the context of the _issuer backend_.
 {% hint style="info" %}
 To get info about available options of the **config** command, use:
 
-`waltid-wallet-backend config --help`
+`waltid-walletkit config --help`
 {% endhint %}
 
 For more details about the integrated commands, you may want to refer to the documentation of the SSI Kit, which you find here:

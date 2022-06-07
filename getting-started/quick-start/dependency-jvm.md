@@ -12,6 +12,6 @@ Repositories
 
 Dependency
 
-`implementation("id.walt:waltid-wallet-backend:<version>")`
+`implementation("id.walt:waltid-walletkit:<version>")`
 
-The code-base as well as more detailed instructions can be found at GitHub  [https://github.com/walt-id/waltid-wallet-backend](https://github.com/walt-id/waltid-wallet-backend)
+The code-base as well as more detailed instructions can be found at GitHub  [https://github.com/walt-id/waltid-walletkit](https://github.com/walt-id/waltid-walletkit)

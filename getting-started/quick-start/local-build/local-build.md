@@ -9,7 +9,7 @@ For importing, building and running the project in your Kotlin/Java IDE, refer t
 For a plain Gradle build, independent of your IDE, simply execute:
 
 ```
-cd waltid-wallet-backend
+cd waltid-walletkit
 
 # Build:
 
@@ -17,7 +17,7 @@ cd waltid-wallet-backend
 
 # Now run the backend using the run script:
 
-build/install/waltid-wallet-backend/bin/waltid-wallet-backend run
+build/install/waltid-walletkit/bin/waltid-walletkit run
 ```
 
 ## Web Wallet (waltid-web-wallet)

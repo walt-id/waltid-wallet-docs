@@ -130,10 +130,10 @@ To set binding address and port, you can also use the command arguments of the *
 
 _To set the bind address to "192.168.0.1" and the port to 8081_:
 ```
-waltid-wallet-backend run -b "192.168.0.1" -p 8081
+waltid-walletkit run -b "192.168.0.1" -p 8081
 ```
 
 _To bind to all interfaces (on the default port)_:
 ```
-waltid-wallet-backend run --bind-all
+waltid-walletkit run --bind-all
 ```

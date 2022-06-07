@@ -101,17 +101,17 @@ The wallet backend intergrates a subset of commands from the **walt.id SSI Kit**
 {% hint style="info" %}
 For simplicity the examples will use the **command placeholder**
 
-**`waltid-wallet-backend`**
+**`waltid-walletkit`**
 
 The actual command depends on your execution environment, in the case of the docker container this could translate to something like:
 
-`docker run -p 8080:8080 -e WALTID_DATA_ROOT=/data -v $PWD:/data waltid/ssikit-wallet-backend`
+`docker run -p 8080:8080 -e WALTID_DATA_ROOT=/data -v $PWD:/data waltid/walletkit`
 {% endhint %}
 
 To manage keys and dids for the issuer, use the **config** command, with the command flag _--as-issuer_, or its shortcut _-i_:
 
 ```
-waltid-wallet-backend config --as-issuer --help
+waltid-walletkit config --as-issuer --help
 ```
 
 The following examples show typical use cases and scenarios of setting up an issuer backend for various ecosystems.
@@ -121,7 +121,7 @@ The following examples show typical use cases and scenarios of setting up an iss
 **Create a new **_**Secp256k1**_** key**
 
 ```
-waltid-wallet-backend config --as-issuer key gen -a Secp256k1
+waltid-walletkit config --as-issuer key gen -a Secp256k1
 ```
 
 _Sample output_
@@ -134,7 +134,7 @@ Key "528435baadfd49559b1fe141f43bd258" generated.
 **Create a new **_**did:ebsi**_
 
 ```
-waltid-wallet-backend config --as-issuer did create -m ebsi -k 528435baadfd49559b1fe141f43bd258
+waltid-walletkit config --as-issuer did create -m ebsi -k 528435baadfd49559b1fe141f43bd258
 ```
 
 _Sample output_
@@ -152,9 +152,9 @@ Get the **bearer token** from `https://app.preprod.ebsi.eu/users-onboarding/`, a
 ```
 echo "[bearer-token from above mentioned onboarding page]" > bearer-token.txt
 
-waltid-wallet-backend config --as-issuer essif onboard --did did:ebsi:zetpTbH5RwCcQVAfAXGFKyF bearer-token.txt
-waltid-wallet-backend config --as-issuer essif auth-api --did did:ebsi:zetpTbH5RwCcQVAfAXGFKyF
-waltid-wallet-backend config --as-issuer essif did register --did did:ebsi:zetpTbH5RwCcQVAfAXGFKyF
+waltid-walletkit config --as-issuer essif onboard --did did:ebsi:zetpTbH5RwCcQVAfAXGFKyF bearer-token.txt
+waltid-walletkit config --as-issuer essif auth-api --did did:ebsi:zetpTbH5RwCcQVAfAXGFKyF
+waltid-walletkit config --as-issuer essif did register --did did:ebsi:zetpTbH5RwCcQVAfAXGFKyF
 ```
 
 **Set the **_**issuerDid**_** config property**
@@ -178,7 +178,7 @@ _Also refer to_ [_Issuer DID configuration_](issuer-portal-setup.md#issuer-did)
 Run the following command, **replacing the **_**domain**_** (-d) and **_**path**_** (-p) arguments**, matching your web server on which you can publish the did document:
 
 ```
-waltid-wallet-backend config --as-issuer did create -m web -d "walt.id" -p "my-issuer"
+waltid-walletkit config --as-issuer did create -m web -d "walt.id" -p "my-issuer"
 ```
 
 _Observe the command output:_
@@ -245,7 +245,7 @@ The private key should be available in **JWK or PEM format**.
 In this example, we import a private key from the file _priv.jwk_:
 
 ```
-waltid-wallet-backend config --as-issuer key import priv.jwk
+waltid-walletkit config --as-issuer key import priv.jwk
 ```
 
 _Output_
@@ -264,7 +264,7 @@ Now we can import the DID, either by importing the DID document from a local JSO
 In this example, we import a **did:key**, for which the DID document can be derived without external DID registry, and associate it with the previously imported key ID:
 
 ```
-waltid-wallet-backend config --as-issuer did import -k e18e5427f7da48ce813e27ab3e5f66ad -d did:key:z6MkovU6u4EpvADNVtxL21T9ocYzK8BDKyXtArskfbZkGsNe
+waltid-walletkit config --as-issuer did import -k e18e5427f7da48ce813e27ab3e5f66ad -d did:key:z6MkovU6u4EpvADNVtxL21T9ocYzK8BDKyXtArskfbZkGsNe
 ```
 
 **Option 2: Import DID document**
@@ -272,7 +272,7 @@ waltid-wallet-backend config --as-issuer did import -k e18e5427f7da48ce813e27ab3
 In case, the DID document cannot be resolved or derived, we can also import the DID document from a local JSON file:
 
 ```
-waltid-wallet-backend config --as-issuer did import -k e18e5427f7da48ce813e27ab3e5f66ad -f /path/to/did.json
+waltid-walletkit config --as-issuer did import -k e18e5427f7da48ce813e27ab3e5f66ad -f /path/to/did.json
 ```
 
 The relevant output for _**both import options**_, will look similar to this:
