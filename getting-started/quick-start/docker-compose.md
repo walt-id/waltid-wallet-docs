@@ -36,6 +36,8 @@ This configuration will publish the following endpoints by default:
 
 Note: \_\_ **\[HOSTNAME]** is your local computer name. If you use _**localhost**_ instead, some features, particularly with regards to credential exchange, will _**not**_ work correctly.
 
+In case the HOSTNAME is not picked up automatically, you might need to set it in an env-file and refer to it by: docker-compose **--env-file env-file-with-hostname** up.
+
 Visit the `./docker` folder for adjusting the system config in the following files:
 
 * **docker-compose.yaml** - Docker config for launching containers, volumes & networking
