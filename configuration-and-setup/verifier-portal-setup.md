@@ -45,6 +45,44 @@ This example shows the known wallet configuration for the walt.id web wallet, in
 }
 ```
 
+### Verification policies
+
+By default, the verifier backend will apply some basic verification policies to the verifiable presentations and credentials, presented by the wallet.
+The default verification policies are:
+
+* **SignaturePolicy**
+  * _checks the signature of the credential_
+* **ChallengePolicy**
+  * _verifies that the credential was signed against the challenge requested by the verifier backend_
+* **VpTokenClaimPolicy**
+  * _verifies that the SIOP response (presentation from the wallet) matches the vp_token claim_
+
+In order to enforce other policies to be executed on the presented credentials, you can use the `additionalPolicies` property in the verifier configuration.
+
+This also allows for configuring custom dynamic policies, and supports specification of policy arguments.
+
+For details of using verification policies and creating custom dynamic policies, refer to the corresponding section of the [SSIKit documentation](https://docs.walt.id/v/ssikit/concepts/verification-policies).
+
+This example shows the configuration of additional policies in **verifier-config.json**:
+```
+{
+  [...]
+  "additionalPolicies": [
+    {
+      "policy": "JsonSchemaPolicy"
+    },
+    {
+      "policy": "MyCustomPolicy",
+      "argument": {
+        "param": "value"
+      }
+    }
+  ]
+}
+```
+
+
+
 ### Configuration example
 
 Here's a complete example for the **verifier-config.json**:
@@ -53,6 +91,11 @@ Here's a complete example for the **verifier-config.json**:
 {
   "verifierUiUrl": "https://verifier.waltid.org",
   "verifierApiUrl": "https://verifier.waltid.org/verifier-api",
+  "additionalPolicies": [
+    {
+      "policy": "JsonSchemaPolicy"
+    }
+  ],
   "wallets": {
     "walt.id": {
       "id": "walt.id",
