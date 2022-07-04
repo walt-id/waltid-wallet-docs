@@ -61,7 +61,14 @@ In order to enforce other policies to be executed on the presented credentials, 
 
 This also allows for configuring custom dynamic policies, and supports specification of policy arguments.
 
+The verifier backend supports the verification policy management commands provided by the SSIKit, using the following CLI subcommand: 
+
+```
+waltid-walletkit config --as-verifier vc policies --help
+```
+
 For details of using verification policies and creating custom dynamic policies, refer to the corresponding section of the [SSIKit documentation](https://docs.walt.id/v/ssikit/concepts/verification-policies).
+
 
 This example shows the configuration of additional policies in **verifier-config.json**:
 ```
