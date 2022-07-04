@@ -53,7 +53,7 @@ The default verification policies are:
 * **SignaturePolicy**
   * _checks the signature of the credential_
 * **ChallengePolicy**
-  * _verifies that the credential was signed against the challenge requested by the verifier backend_
+  * _verifies that the presentation was signed against the challenge requested by the verifier backend_
 * **VpTokenClaimPolicy**
   * _verifies that the SIOP response (presentation from the wallet) matches the vp_token claim_
 
