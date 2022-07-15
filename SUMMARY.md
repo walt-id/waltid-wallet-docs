@@ -26,6 +26,7 @@
 * [CLI | Command Line Interface](getting-started/cli.md)
 * [REST APIs](getting-started/rest-apis.md)
 * [Public deployments](getting-started/public-deployments.md)
+* [Demo](getting-started/demo.md)
 
 ## Configuration and Setup
 
