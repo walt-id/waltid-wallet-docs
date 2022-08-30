@@ -4,6 +4,6 @@ Using our prebuild frontend applications for the different parties (holder, veri
 
 ## Solutions
 
-* [Web-Wallet](https://github.com/walt-id/waltid-web-wallet) - The frontend solution for holder
-* [Verifier-Portal](https://github.com/walt-id/waltid-verifier-portal) - The frontend solution for Verifiers
-* [Issuer-Portal](https://github.com/walt-id/waltid-issuer-portal) - The frontend solution for Issuers
+* [Web-Wallet](https://github.com/walt-id/waltid-web-wallet) - The frontend solution for holders
+* [Verifier-Portal](https://github.com/walt-id/waltid-verifier-portal) - The frontend solution for verifiers
+* [Issuer-Portal](https://github.com/walt-id/waltid-issuer-portal) - The frontend solution for issuers
