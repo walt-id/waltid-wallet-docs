@@ -22,9 +22,9 @@
     * [Docker Build](getting-started/quick-start/local-build/docker-build.md)
     * [Local Build](getting-started/quick-start/local-build/local-build.md)
   * [Docker](getting-started/quick-start/docker-compose.md)
-  * [Dependency (JVM)](getting-started/quick-start/dependency-jvm.md)
 * [CLI | Command Line Interface](getting-started/cli.md)
 * [REST APIs](getting-started/rest-apis.md)
+* [Dependency (JVM)](getting-started/dependency-jvm.md)
 * [Public deployments](getting-started/public-deployments.md)
 * [Demo](getting-started/demo.md)
 
