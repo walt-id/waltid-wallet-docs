@@ -43,6 +43,8 @@ waltid-walletkit run
 ```
 docker run -p 8080:8080 -e WALTID_DATA_ROOT=/data -v $PWD:/data waltid/walletkit run
 ```
+
+
 {% endtab %}
 
 {% tab title="Local Build" %}
@@ -91,6 +93,8 @@ To get info about available options of the **run** command, use:
 
 `waltid-walletkit run --help`
 {% endhint %}
+
+More options how to build the project can be found [here](quick-start/local-build/).
 
 ## Configuration
 
