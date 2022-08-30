@@ -21,6 +21,7 @@
 * [CLI | Command Line Interface](getting-started/cli.md)
 * [REST APIs](getting-started/rest-apis.md)
 * [Dependency (JVM)](getting-started/dependency-jvm.md)
+* [Frontend](getting-started/frontend.md)
 * [Public deployments](getting-started/public-deployments.md)
 * [Demo](getting-started/demo.md)
 * [Build](getting-started/quick-start/local-build/README.md)
