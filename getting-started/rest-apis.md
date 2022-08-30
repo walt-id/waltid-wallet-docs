@@ -94,6 +94,10 @@ Refer to the [wallet backend configuration section](../configuration-and-setup/w
 
 A **swagger documentation** _(including the issuer and verifier API documentation)_ is available under `/api/swagger`
 
+## Frontend
+
+If you want to start using the API right away without setting up a custom frontend application, you can use one of our [prebuild](rest-apis.md#undefined) ones to get started.
+
 ## Publicly deployed API documentation
 
 You can find the publicly deployed API documentations for our [stable and rolling deployments](public-deployments.md):
