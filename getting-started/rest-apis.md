@@ -72,7 +72,13 @@ build/install/waltid-walletkit/bin/waltid-walletkit run
 {% endtab %}
 {% endtabs %}
 
+{% hint style="info" %}
+To get info about available options of the **run** command, use:
 
+`waltid-walletkit run --help`
+{% endhint %}
+
+More options how to build the project can be found [here](quick-start/local-build/).
 
 ## Binding address and port
 
