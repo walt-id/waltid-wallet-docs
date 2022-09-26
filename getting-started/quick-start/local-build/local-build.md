@@ -31,7 +31,7 @@ Uncomment or adjust to your needs:
 ```
 [...]
 proxy: {
-   //"/api/": "https://wallet.waltid.org"
+   //"/api/": "https://wallet.walt-test.cloud"
    "/api/": "http://localhost:8080"
   },
 [...]
@@ -59,9 +59,9 @@ Uncomment or adjust to your needs:
 ```
 [...]
 proxy: {
-    //'/issuer-api/': 'https://wallet.waltid.org',
-    //'/onboarding-api/': 'https://wallet.waltid.org',
-    //'/api/': 'https://wallet.waltid.org'
+    //'/issuer-api/': 'https://wallet.walt-test.cloud',
+    //'/onboarding-api/': 'https://wallet.walt-test.cloud',
+    //'/api/': 'https://wallet.walt-test.cloud'
     '/issuer-api/': 'http://localhost:8080/',
     '/onboarding-api/': 'http://localhost:8080/',
     '/api/': 'http://localhost:8080/'
@@ -91,8 +91,8 @@ Uncomment or adjust to your needs:
 ```
 [...]
 proxy: {
-    // '/verifier-api/': 'https://wallet.waltid.org',
-    // '/api/': 'https://wallet.waltid.org'
+    // '/verifier-api/': 'https://wallet.walt-test.cloud',
+    // '/api/': 'https://wallet.walt-test.cloud'
      '/verifier-api/': 'http://localhost:8080/',
      '/api/': 'http://localhost:8080/'
   },

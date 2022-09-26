@@ -26,9 +26,9 @@ This deployment should not be considered stable and should not be used for demo 
 
 The rolling deployment is available for demo and trial at:
 
-* Web wallet: [https://wallet.waltid.org](https://wallet.waltid.org)
-* Issuer portal: [https://issuer.waltid.org](https://issuer.waltid.org)
-* Verifier portal: [https://verifier.waltid.org](https://verifier.waltid.org)
+* Web wallet: [https://wallet.walt-test.cloud](https://wallet.walt-test.cloud)
+* Issuer portal: [https://issuer.walt-test.cloud](https://issuer.walt-test.cloud)
+* Verifier portal: [https://verifier.walt-test.cloud](https://verifier.walt-test.cloud)
 
 ## User authentication
 

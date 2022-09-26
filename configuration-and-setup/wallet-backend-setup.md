@@ -25,8 +25,8 @@ Configure the URLs via which the wallet UI and API will be reachable from an ext
 
 ```
 {
-  "walletUiUrl": "http://wallet.waltid.org",
-  "walletApiUrl": "http://wallet.waltid.org/api",
+  "walletUiUrl": "http://wallet.walt-test.cloud",
+  "walletApiUrl": "http://wallet.walt-test.cloud/api",
 [...]
 }
 ```
@@ -43,7 +43,7 @@ For each known issuer configure a unique **id**, a **description** and the **OID
   "issuers": {
     "walt.id": {
       "id": "walt.id",
-      "url": "http://issuer.waltid.org/issuer-api/oidc",
+      "url": "http://issuer.walt-test.cloud/issuer-api/oidc",
       "description": "walt.id Issuer Portal"
     },
     [...]
@@ -95,12 +95,12 @@ Here's a complete example for the **wallet-config.json**:
 
 ```
 {
-  "walletUiUrl": "https://wallet.waltid.org",
-  "walletApiUrl": "https://wallet.waltid.org/api",
+  "walletUiUrl": "https://wallet.walt-test.cloud",
+  "walletApiUrl": "https://wallet.walt-test.cloud/api",
   "issuers": {
     "walt.id": {
       "id": "walt.id",
-      "url": "https://issuer.waltid.org/issuer-api/oidc",
+      "url": "https://issuer.walt-test.cloud/issuer-api/oidc",
       "description": "walt.id Issuer Portal"
     }
   }

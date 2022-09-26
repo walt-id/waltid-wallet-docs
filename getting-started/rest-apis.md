@@ -102,5 +102,5 @@ If you want to start using the API right away without setting up a custom fronte
 
 You can find the publicly deployed API documentations for our [stable and rolling deployments](public-deployments.md):
 
-* **Rolling deployment:** [https://wallet.waltid.org/api/swagger](https://wallet.waltid.org/api/swagger)
+* **Rolling deployment:** [https://wallet.walt-test.cloud/api/swagger](https://wallet.walt-test.cloud/api/swagger)
 * **Stable deployment:** [https://wallet.walt.id/api/swagger](https://wallet.walt.id/api/swagger)

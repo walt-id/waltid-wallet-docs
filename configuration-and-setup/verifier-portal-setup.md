@@ -18,8 +18,8 @@ Configure the URLs via which the verifier portal UI and backend API will be reac
 
 ```
 {
-  "verifierUiUrl": "https://verifier.waltid.org",
-  "verifierApiUrl": "https://verifier.waltid.org/verifier-api",
+  "verifierUiUrl": "https://verifier.walt-test.cloud",
+  "verifierApiUrl": "https://verifier.walt-test.cloud/verifier-api",
 [...]
 }
 ```
@@ -36,7 +36,7 @@ This example shows the known wallet configuration for the walt.id web wallet, in
   "wallets": {
     "walt.id": {
       "id": "walt.id",
-      "url": "https://wallet.waltid.org",
+      "url": "https://wallet.walt-test.cloud",
       "presentPath": "api/wallet/siopv2/initPresentation/",
       "receivePath" : "api/wallet/siopv2/initPassiveIssuance/",
       "description": "walt.id web wallet"
@@ -96,8 +96,8 @@ Here's a complete example for the **verifier-config.json**:
 
 ```
 {
-  "verifierUiUrl": "https://verifier.waltid.org",
-  "verifierApiUrl": "https://verifier.waltid.org/verifier-api",
+  "verifierUiUrl": "https://verifier.walt-test.cloud",
+  "verifierApiUrl": "https://verifier.walt-test.cloud/verifier-api",
   "additionalPolicies": [
     {
       "policy": "JsonSchemaPolicy"
@@ -106,7 +106,7 @@ Here's a complete example for the **verifier-config.json**:
   "wallets": {
     "walt.id": {
       "id": "walt.id",
-      "url": "https://wallet.waltid.org",
+      "url": "https://wallet.walt-test.cloud",
       "presentPath": "api/wallet/siopv2/initPresentation/",
       "receivePath" : "api/wallet/siopv2/initPassiveIssuance/",
       "description": "walt.id web wallet"
