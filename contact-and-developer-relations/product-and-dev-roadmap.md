@@ -27,7 +27,7 @@ The _Roadmap_ in a nutshell:
 | **Perspective**     | High-level and functional (incl. key releases and benefits).                                          |
 | **Timeframe**       | Shows plans for the next 3 months.                                                                    |
 | **Update Cycle**    | Weekly (minor changes) and/or monthly (significant changes).                                          |
-| **Link**            | [GitHub](https://github.com/orgs/walt-id/projects/10/views/4)                                         |
+| **Link**            | [Notion](https://www.notion.so/fcde1687baab42378b3047d4a22eeaca?v=1140dd17c17b4726a70cc1465d20866d)   |
 
 ## The "Dev Board"
 
