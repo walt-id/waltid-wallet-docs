@@ -45,9 +45,10 @@
 ## CONTACT & DEVELOPER RELATIONS
 
 * [Join The Community](contact-and-developer-relations/join-the-community.md)
-* [Product & Dev Roadmap](contact-and-developer-relations/product-and-dev-roadmap.md)
-* [Contribute](contact-and-developer-relations/contribute.md)
-* [Contact Us](contact-and-developer-relations/contact-us.md)
+* [Roadmap](https://walt-id.notion.site/fcde1687baab42378b3047d4a22eeaca?v=1140dd17c17b4726a70cc1465d20866d)
+* [Contribute](https://github.com/walt-id/.github/discussions/6)
+* [Share Feedback](https://walt.id/feedback)
+* [Contact](contact-and-developer-relations/contact-us.md)
 
 ## Product Editions
 
