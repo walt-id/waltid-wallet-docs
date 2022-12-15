@@ -42,16 +42,22 @@
   * [OIDC for Verifiable Presentations (SIOP)](concepts/oidc/oidc-1.md)
   * [Issuance via OIDC for Verifiable Presentations (SIOP)](concepts/oidc/oidc-2.md)
 
-## CONTACT & DEVELOPER RELATIONS
+## DEVELOPER RELATIONS
 
-* [Join The Community](contact-and-developer-relations/join-the-community.md)
 * [Roadmap](https://walt-id.notion.site/fcde1687baab42378b3047d4a22eeaca?v=1140dd17c17b4726a70cc1465d20866d)
 * [Contribute](https://github.com/walt-id/.github/discussions/6)
 * [Share Feedback](https://walt.id/feedback)
-* [Contact](contact-and-developer-relations/contact-us.md)
+* [Contact](https://github.com/walt-id/.github/discussions)
 
 ## Product Editions
 
 * [Open Source | Always Free](product-editions/open-source-or-always-free.md)
 * [Enterprise](product-editions/enterprise.md)
 * [Cloud Platform](product-editions/cloud-platform.md)
+
+## Community
+
+* [Discord](https://walt.id/discord)
+* [Twitter](https://twitter.com/walt\_id)
+* [Newsletter](https://walt.id/community)
+* [GitHub Discussions](https://github.com/walt-id/.github/discussions)
