@@ -7,8 +7,9 @@ The following illustrates how the wallet-backend can be used via Gradle:
 Repositories
 
 `maven("https://maven.walt.id/repository/waltid/")`&#x20;
-
-`maven("https://maven.walt.id/repository/waltid-ssi-kit/")`
+`maven("https://maven.walt.id/repository/waltid-ssi-kit/")`&#x20;
+`maven("https://repo.danubetech.com/repository/maven-public/")`&#x20;
+`maven("https://jitpack.io/")`&#x20;
 
 Dependency
 
