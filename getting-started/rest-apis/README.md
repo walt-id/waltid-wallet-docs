@@ -111,6 +111,6 @@ You can find the publicly deployed API documentations for our [stable and rollin
 
 [Credential Templates](credential-templates.md) - Define schemas on which you can issue Verifiable Credentials
 
-[Credential Issuance](credential-issuance-api.md) -  How to issue Verifiable Credentials based on previous defined templates
+[Credential Issuance](credential-issuance.md) -  How to issue Verifiable Credentials based on previous defined templates
 
 [Credential Verification](credential-verification.md) - How to verify Verifiable Credentials

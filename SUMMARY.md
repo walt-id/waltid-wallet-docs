@@ -22,7 +22,7 @@
 * [REST APIs](getting-started/rest-apis/README.md)
   * [Issuer Configuration](getting-started/rest-apis/issuer-configuration.md)
   * [Credential Templates](getting-started/rest-apis/credential-templates.md)
-  * [Credential Issuance API](getting-started/rest-apis/credential-issuance-api.md)
+  * [Credential Issuance](getting-started/rest-apis/credential-issuance.md)
   * [Credential Verification](getting-started/rest-apis/credential-verification.md)
 * [Dependency (JVM)](getting-started/dependency-jvm.md)
 * [Frontend](getting-started/frontend.md)
