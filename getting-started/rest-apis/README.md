@@ -78,11 +78,11 @@ To get info about available options of the **run** command, use:
 `waltid-walletkit run --help`
 {% endhint %}
 
-More options how to build the project can be found [here](quick-start/local-build/).
+More options how to build the project can be found [here](../quick-start/local-build/).
 
 ## Binding address and port
 
-Refer to the [wallet backend configuration section](../configuration-and-setup/wallet-backend-setup.md#binding-address-and-port), to find out details about binding address and port on which the REST APIs are exposed.
+Refer to the [wallet backend configuration section](../../configuration-and-setup/wallet-backend-setup.md#binding-address-and-port), to find out details about binding address and port on which the REST APIs are exposed.
 
 ## API services
 
@@ -96,11 +96,21 @@ A **swagger documentation** _(including the issuer and verifier API documentatio
 
 ## Frontend
 
-If you want to start using the API right away without setting up a custom frontend application, you can use one of our [prebuild](rest-apis.md#undefined) ones to get started.
+If you want to start using the API right away without setting up a custom frontend application, you can use one of our [prebuild](./#undefined) ones to get started.
 
 ## Publicly deployed API documentation
 
-You can find the publicly deployed API documentations for our [stable and rolling deployments](public-deployments.md):
+You can find the publicly deployed API documentations for our [stable and rolling deployments](../public-deployments.md):
 
 * **Rolling deployment:** [https://wallet.walt-test.cloud/api/swagger](https://wallet.walt-test.cloud/api/swagger)
 * **Stable deployment:** [https://wallet.walt.id/api/swagger](https://wallet.walt.id/api/swagger)
+
+### Get started with the following:
+
+[Issuer Configuration](issuer-configuration.md) - How to configure your issuer with multi tendency support
+
+[Credential Templates](credential-templates.md) - Define schemas on which you can issue Verifiable Credentials
+
+[Credential Issuance](credential-issuance-api.md) -  How to issue Verifiable Credentials based on previous defined templates
+
+[Credential Verification](credential-verification.md) - How to verify Verifiable Credentials

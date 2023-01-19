@@ -1,6 +1,6 @@
 # Frontend
 
-Using our prebuild frontend applications for the different parties (holder, verifier, issuer), you can easily offer a full-fledged solution to your customers and clients by connecting them to the [Wallet Kit API](rest-apis.md).
+Using our prebuild frontend applications for the different parties (holder, verifier, issuer), you can easily offer a full-fledged solution to your customers and clients by connecting them to the [Wallet Kit API](rest-apis/).
 
 ## Solutions
 

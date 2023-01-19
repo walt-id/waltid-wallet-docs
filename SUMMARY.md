@@ -19,7 +19,11 @@
 
 * [Quick Start](getting-started/quick-start/README.md)
 * [CLI | Command Line Interface](getting-started/cli.md)
-* [REST APIs](getting-started/rest-apis.md)
+* [REST APIs](getting-started/rest-apis/README.md)
+  * [Issuer Configuration](getting-started/rest-apis/issuer-configuration.md)
+  * [Credential Templates](getting-started/rest-apis/credential-templates.md)
+  * [Credential Issuance API](getting-started/rest-apis/credential-issuance-api.md)
+  * [Credential Verification](getting-started/rest-apis/credential-verification.md)
 * [Dependency (JVM)](getting-started/dependency-jvm.md)
 * [Frontend](getting-started/frontend.md)
 * [Public deployments](getting-started/public-deployments.md)

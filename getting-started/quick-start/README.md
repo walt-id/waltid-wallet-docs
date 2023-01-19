@@ -9,7 +9,7 @@ There are different ways to get started with the Wallet Kit, either you use the 
 
 [**CLI tool**](../cli.md): The Wallet Kit comes with a **** [**command-line interface**](../cli.md) to conveniently configure the issueer DID among other configuration options.
 
-[**REST API**](../rest-apis.md) **** - **** Use the Wallet Kit API.
+[**REST API**](../rest-apis/) **** - **** Use the Wallet Kit API.
 
 ****[**Frontend Applications**](../frontend.md) **** - Offer a full solution by connecting our pre-build frontends to the Wallet Kit backend.
 
