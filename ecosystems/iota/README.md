@@ -17,3 +17,9 @@ Depending on your preference, start exploring with the deep dive or a tutorial.
 **Tutorials**&#x20;
 
 [Login With IOTA](tutorials/login-with-iota.md) - Learn how to configure the wallet kit + other needed frontend projects to build a Login With IOTA use-case
+
+
+
+**Demo**
+
+[Login with IOTA](https://www.youtube.com/watch?v=samp2o65nX8)
