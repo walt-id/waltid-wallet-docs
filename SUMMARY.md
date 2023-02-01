@@ -46,6 +46,12 @@
   * [OIDC for Verifiable Presentations (SIOP)](concepts/oidc/oidc-1.md)
   * [Issuance via OIDC for Verifiable Presentations (SIOP)](concepts/oidc/oidc-2.md)
 
+## Ecosystems
+
+* [IOTA](ecosystems/iota/README.md)
+  * [Tutorials](ecosystems/iota/tutorials/README.md)
+    * [Login With IOTA](ecosystems/iota/tutorials/login-with-iota.md)
+
 ## Community
 
 * [Discord](https://walt.id/discord)
