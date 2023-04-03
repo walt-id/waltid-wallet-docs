@@ -10,13 +10,13 @@ The default _tenantId_ is "default".
 
 ### Creating a DID for a tenant&#x20;
 
-POST /issuer-api/{tenantId}/config/createDid
+POST /issuer-api/{tenantId}/config/did/create
 
 {% tabs %}
 {% tab title="CURL" %}
 ```bash
 curl -X 'POST' \
-  'http://localhost:8080/issuer-api/default/config/createDid' \
+  'http://localhost:8080/issuer-api/default/config/did/create \
   -H 'accept: application/json' \
   -H 'Content-Type: application/json' \
   -d '{
