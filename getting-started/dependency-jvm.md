@@ -6,12 +6,12 @@ The following illustrates how the wallet-backend can be used via Gradle:
 
 Repositories
 
-`maven("https://maven.walt.id/repository/waltid/")`&#x20;
+`maven("https://maven.walt.id/repository/waltid/")`
 
-`maven("https://maven.walt.id/repository/waltid-ssi-kit/")`
+`maven("https://maven.walt.id/repository/waltid-ssikit/")`
 
 Dependency
 
 `implementation("id.walt:waltid-walletkit:<version>")`
 
-The code-base as well as more detailed instructions can be found at GitHub  [https://github.com/walt-id/waltid-walletkit](https://github.com/walt-id/waltid-walletkit)
+The code-base as well as more detailed instructions can be found at GitHub [https://github.com/walt-id/waltid-walletkit](https://github.com/walt-id/waltid-walletkit)
