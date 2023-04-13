@@ -1,8 +1,29 @@
 # Credential Verification
 
-### Same device flow
+There are 3 ways to integrate the verification flows into your application:
 
-GET /verifier-api/default/present?walletId=walt.id\&vcType=VerifiableId
+1) Same-device (web-based) flow
+2) Cross-device flow (with QR code)
+3) Via webhooks (callback)
+
+In all cases, first make sure you have your tenant configured with all the verification policies, etc. that fit your requirements.
+
+Then start the presentation flow, using the methods described below.
+
+## Same device flow
+
+`GET /verifier-api/<tenantId>/present?walletId=walt.id&vcType=VerifiableId`
+
+**Supported parameters:**
+
+| Key | Description | Example |
+|---    |---        |---      |
+| tenantId   | Path parameter, the tenant ID for this request       | /verifier-api/**default**/present?...        |
+| walletId         | Wallet ID as configured in the tenant configuration | walletId=walt.id |
+| vcType           | Credential type that should be requested in the presentation request. **Can be specified multiple times** | vcType=VerifiableId&vcType=Europass
+| pdByReference      | If true, the presentation definition will be passed as a URI in the presentation request (see [`presentation_definition_uri`](https://openid.net/specs/openid-4-verifiable-presentations-1_0.html#name-presentation_definition_uri)), otherwise a full PD object is included in the [`presentation_definition`](https://openid.net/specs/openid-4-verifiable-presentations-1_0.html#name-presentation_definition-par) parameter. | pdByReference=false
+| verifierUiUrl     | Web redirection URL, on which the verification result will be received. The browser will be navigated to this URL with the sub-path **/success**, containing an access_token parameter, which can be used to obtain the verification result, **overrides** the [`verifierUiUrl`](../../configuration-and-setup/verifier-portal-setup.md#external-urls) configuration parameter in the tenant configuration | verifierUiUrl=https://myservice.example.com/verification/callback/, **will be called like:** https://myservice.example.com/verification/callback/success/?access_token=abc123
+| verificationCallbackUrl | Webhook to actively callback with the verification result (see also [Verification callbacks](#verification-callbacks)), the URL needs to be configured as allowed webhook in the tenant configuration. |
 
 {% tabs %}
 {% tab title="CURL" %}
@@ -26,17 +47,44 @@ By telling the wallet what vcType is required, it will usually filter the list o
 {% endtab %}
 {% endtabs %}
 
+In the same-device flow the browser gets navigated to this API URL, with the given parameters
+
+The walletkit redirects to the wallet and on completion, the walletkit redirects the browser back to the application. 
+
+The web redirection URL is configured in the tenant configuration parameter [`verifierUiUrl`](../../configuration-and-setup/verifier-portal-setup.md#external-urls), or can be overridden using the `verifierUiUrl` URL parameter.
+
+The `verifierUiUrl` is called with the sub-path /success and an `access_token` parameter, which can be used to [retrieve the verification result data](#verification-result).
+
+**Example flow**
+
+Navigate the browser to:
+
+`https://wallet.walt-test.cloud/verifier-api/default/present?walletId=walt.id&vcType=VerifiableId&vcType=Europass&verifierUiUrl=https://myservice.example.com/callback/`
+
+The browser will be redirected to the wallet. The user will be presented the presentation request and asked to confirm it.
+
+Eventually the browser will be redirected back to the application like this:
+
+`https://myservice.example.com/callback/success/?access_token=abc123`
+
+**Note** the subpath `/success/` being added to the `verifierUiUrl`!
+
+Use the access token to retrieve the verification result from the walletkit like described in [Verification result](#verification-result).
+
 ## Cross device flow
 
-GET /verifier-api/{tenantId}/presentXDevice
+`GET /verifier-api/{tenantId}/presentXDevice`
+
+**Supported parameters:**
+
+| Key | Description | Example |
+|---    |---        |---      |
+| tenantId   | Path parameter, the tenant ID for this request       | /verifier-api/**default**/presentXDevice?...        |
+| vcType           | Credential type that should be requested in the presentation request. **Can be specified multiple times** | vcType=VerifiableId&vcType=Europass
+| pdByReference      | If true, the presentation definition will be passed as a URI in the presentation request (see [`presentation_definition_uri`](https://openid.net/specs/openid-4-verifiable-presentations-1_0.html#name-presentation_definition_uri)), otherwise a full PD object is included in the [`presentation_definition`](https://openid.net/specs/openid-4-verifiable-presentations-1_0.html#name-presentation_definition-par) parameter. | pdByReference=false
 
 {% tabs %}
 {% tab title="CURL" %}
-Available parameters:
-
-* tenantId: Tenant Id, by default "default"
-* vcType: Array, select your VC type IDs, e.g. "VerifiableId"
-* schemaUri: Array, can be used instead of vcType to specify by schema URI instead of VC type
 
 ```bash
 curl -X 'GET' \
@@ -54,6 +102,67 @@ curl -X 'GET' \
 ```
 {% endtab %}
 {% endtabs %}
+
+For starting a cross-device presentation flow, call this API with the required parameters to create a presentation request.
+
+As a response, you get an object containing a `requestId` and a `url`.
+
+Your application should now render the `url` from the response object as a QR code, or deep-link.
+
+The `requestId` from the response object can be used to query the verification request status, using the API endpoint described [here](#cross-device-verification-request-status).
+
+The wallet can scan the rendered QR code and parse the presentation request. Eventually it will post the presentation response to the walletkit backend, which will update the [request status](#cross-device-verification-request-status).
+
+When the request is fulfilled, the response of the [verification request status](#cross-device-verification-request-status) API, will contain a URI with the `access_token` parameter, which can be used to fetch the presentation result using the [Verification result](#verification-result) API.
+
+### Cross-device verification request status
+
+`GET /verifier-api/{tenantId}/verify/isVerified`
+
+**Supported parameters:**
+
+| Key | Description | Example |
+|---    |---        |---      |
+| tenantId   | Path parameter, the tenant ID for this request       | /verifier-api/**default**/verify/isVerified?...        |
+| state | The **request ID** as returned by the `presentXDevice` API call | state=req123
+
+{% tabs %}
+{% tab title="CURL" %}
+
+```bash
+curl -X 'GET' \
+  'http://localhost:8080/verifier-api/default/verify/isVerified?state=req123' \
+  -H 'accept: application/json'
+```
+{% endtab %}
+
+{% tab title="Example Response" %}
+```
+https://myservice.example.com/callback/success/?access_token=abc123
+```
+{% endtab %}
+{% endtabs %}
+
+The application calls this API, after starting a [cross-device presentation flow](#cross-device-flow), using the request ID received in the response object for the `state` parameter of this API.
+
+This API will return a status `404 Not found`, while it is waiting for the cross-device request to be fulfilled.
+
+When the request is fulfilled, it will return a status `200 OK` with the redirection URL in the response body.
+
+From the redirection URL, the application can parse the `access_token` parameter, to fetch the [verification result](#verification-result).
+
+## Verification result
+
+`GET /verifier-api/<tenantID>/auth?access_token=abc123`
+
+**Parameters**
+
+| Key | Description | Example |
+|---    |---        |---      |
+| tenantId   | Path parameter, the tenant ID for this request       | /verifier-api/**default**/auth?...        |
+| access_token | The access token, as returned in web redirection URL or cross-device verification response | access_token=abc123 |
+
+The response of this request will be a verification result, like described in the section [Example verification result](#example-json-body-youll-receive-with-a-webhook-callback-for-the-verifiableid-demo) section.
 
 ## Verification callbacks
 
