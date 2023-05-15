@@ -118,7 +118,7 @@ The following examples show typical use cases and scenarios of setting up an iss
 
 ### EBSI/ESSIF anchored issuer DID
 
-**Create a new **_**Secp256k1**_** key**
+**Create a new \_Secp256k1**\_\*\* key\*\*
 
 ```
 waltid-walletkit config --as-issuer key gen -a Secp256k1
@@ -131,7 +131,7 @@ _Sample output_
 Key "528435baadfd49559b1fe141f43bd258" generated.
 ```
 
-**Create a new **_**did:ebsi**_
+**Create a new \_did:ebsi**\_
 
 ```
 waltid-walletkit config --as-issuer did create -m ebsi -k 528435baadfd49559b1fe141f43bd258
@@ -147,7 +147,7 @@ DID created: did:ebsi:zetpTbH5RwCcQVAfAXGFKyF
 
 **Register the DID on the EBSI blockchain**
 
-Get the **bearer token** from `https://app.preprod.ebsi.eu/users-onboarding/`, and then execute these commands:
+Get the **bearer token** from [`https://app-pilot.ebsi.eu/users-onboarding/v2`](https://app-pilot.ebsi.eu/users-onboarding/v2), and then execute these commands:
 
 ```
 echo "[bearer-token from above mentioned onboarding page]" > bearer-token.txt
@@ -157,7 +157,7 @@ waltid-walletkit config --as-issuer essif auth-api --did did:ebsi:zetpTbH5RwCcQV
 waltid-walletkit config --as-issuer essif did register --did did:ebsi:zetpTbH5RwCcQVAfAXGFKyF
 ```
 
-**Set the **_**issuerDid**_** config property**
+**Set the \_issuerDid**\_\*\* config property\*\*
 
 _issuer-config.json_
 
@@ -173,9 +173,9 @@ _Also refer to_ [_Issuer DID configuration_](issuer-portal-setup.md#issuer-did)
 
 ### DNS/Web anchored issuer DID
 
-**Create a new **_**did:web**_
+**Create a new \_did:web**\_
 
-Run the following command, **replacing the **_**domain**_** (-d) and **_**path**_** (-p) arguments**, matching your web server on which you can publish the did document:
+Run the following command, **replacing the \_domain**_\*\* (-d) and \*\*_**path**\_\*\* (-p) arguments\*\*, matching your web server on which you can publish the did document:
 
 ```
 waltid-walletkit config --as-issuer did create -m web -d "walt.id" -p "my-issuer"
@@ -220,7 +220,7 @@ The DID document **in this example** should be resolvable from this URL:
 
 _The **domain** and **path** will be different in your case._
 
-**Set the **_**issuerDid**_** config property**
+**Set the \_issuerDid**\_\*\* config property\*\*
 
 _issuer-config.json_
 
@@ -284,7 +284,7 @@ _Output_
 DID imported: did:key:z6MkovU6u4EpvADNVtxL21T9ocYzK8BDKyXtArskfbZkGsNe
 ```
 
-**Set the **_**issuerDid**_** config property**
+**Set the \_issuerDid**\_\*\* config property\*\*
 
 _issuer-config.json_
 
