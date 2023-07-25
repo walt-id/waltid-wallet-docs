@@ -25,7 +25,7 @@
   * [Credential Issuance](getting-started/rest-apis/credential-issuance.md)
   * [Credential Verification](getting-started/rest-apis/credential-verification.md)
 * [Dependency (JVM)](getting-started/dependency-jvm.md)
-* [Frontend](getting-started/frontend.md)
+* [Frontend](getting-started/frontend/readme.md)
 * [Public deployments](getting-started/public-deployments.md)
 * [Demo](getting-started/demo.md)
 * [Build](getting-started/quick-start/local-build/README.md)
