@@ -12,6 +12,11 @@ Considering the context, _web-wallet_ offers the following functions:
 - [key functions](#key-functions) - display and manage cryptographic keys
 - [DID functions](#did-functions) - display and manage DID methods
 
+\
+For more details about the available functions,
+check out the [feature list](https://www.notion.so/walt-id/Features-by-Product-aab646e46a744a7d84a6b8fd6b7066ac)
+which offers the option to explore all features in an overview list.
+
 ## Credential functions
 
 - view - display verifiable credentials
