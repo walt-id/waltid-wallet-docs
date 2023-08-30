@@ -1,4 +1,4 @@
-# Credential Issuance API
+# Credential Issuance
 
 Issuance is very simple, in fact, you only need to call a single HTTP POST endpoint:
 
@@ -69,6 +69,6 @@ The selected walletId is the id configured in the mappings seen in wallet\_kit-c
 {% endtab %}
 
 {% tab title="Example Response" %}
-Answers with a redirect (header "Location") to the issuance URL, e.g. [`http://localhost:3000/api/siop/initiateIssuance/?issuer=http%3A%2F%2Flocalhost%3A8080%2Fissuer-api%2Fdefault%2Foidc%2F&credential_type=VerifiableId&pre-authorized_code=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxYTYyMzJiMy1hZDE0LTQ3YTYtYjMxNi00NzUzZjJhM2Q2NWYiLCJwcmUtYXV0aG9yaXplZCI6dHJ1ZX0.TGYpvRwE9Qc7-BSMLAA-u3Kweyf8ks2w3ulBpSyZQiI&user_pin_required=false`](http://localhost:3000/api/siop/initiateIssuance/?issuer=http%3A%2F%2Flocalhost%3A8080%2Fissuer-api%2Fdefault%2Foidc%2F\&credential\_type=VerifiableId\&pre-authorized\_code=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxYTYyMzJiMy1hZDE0LTQ3YTYtYjMxNi00NzUzZjJhM2Q2NWYiLCJwcmUtYXV0aG9yaXplZCI6dHJ1ZX0.TGYpvRwE9Qc7-BSMLAA-u3Kweyf8ks2w3ulBpSyZQiI\&user\_pin\_required=false)``
+Answers with a redirect (header "Location") to the issuance URL, e.g. [`http://localhost:3000/api/siop/initiateIssuance/?issuer=http%3A%2F%2Flocalhost%3A8080%2Fissuer-api%2Fdefault%2Foidc%2F&credential_type=VerifiableId&pre-authorized_code=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxYTYyMzJiMy1hZDE0LTQ3YTYtYjMxNi00NzUzZjJhM2Q2NWYiLCJwcmUtYXV0aG9yaXplZCI6dHJ1ZX0.TGYpvRwE9Qc7-BSMLAA-u3Kweyf8ks2w3ulBpSyZQiI&user_pin_required=false`](http://localhost:3000/api/siop/initiateIssuance/?issuer=http%3A%2F%2Flocalhost%3A8080%2Fissuer-api%2Fdefault%2Foidc%2F\&credential\_type=VerifiableId\&pre-authorized\_code=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxYTYyMzJiMy1hZDE0LTQ3YTYtYjMxNi00NzUzZjJhM2Q2NWYiLCJwcmUtYXV0aG9yaXplZCI6dHJ1ZX0.TGYpvRwE9Qc7-BSMLAA-u3Kweyf8ks2w3ulBpSyZQiI\&user\_pin\_required=false)
 {% endtab %}
 {% endtabs %}

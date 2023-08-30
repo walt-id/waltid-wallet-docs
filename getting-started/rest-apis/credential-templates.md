@@ -9,7 +9,7 @@ description: Verifiable Credential templates/types setup
 You can import a DID document using:
 
 ```bash
-config --as-issuer default vc templates import --name TestCheqdCredential cheqd-credential-template.json
+config --as-issuer default vc templates import --name TestCredential credential-template.json
 ```
 
 The value "default" of `--as-issuer` refers to the tenantId.
@@ -383,7 +383,7 @@ For this demo, we will add the example w3c-ccg credential [CrudeProductCredentia
 {% tab title="CURL" %}
 ```bash
 curl -X 'DELETE' \
-'https://wallet.cheqd.walt-test.cloud/issuer-api/default/config/templates/CrudeProductCredential' \
+'https://wallet.walt-test.cloud/issuer-api/default/config/templates/CrudeProductCredential' \
 -H 'accept: text/plain'
 ```
 {% endtab %}

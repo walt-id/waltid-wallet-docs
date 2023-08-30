@@ -90,7 +90,7 @@ POST /issuer-api/{tenantId}/config/setConfiguration
 {% tab title="CURL" %}
 ```bash
 curl -X 'POST' \
-  'https://wallet.cheqd.walt-test.cloud/issuer-api/default/config/setConfiguration' \
+  'https://wallet.walt-test.cloud/issuer-api/default/config/setConfiguration' \
   -H 'accept: application/json' \
   -H 'Content-Type: application/json' \
   -d 'vv JSON BELOW vv'
