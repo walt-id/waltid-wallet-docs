@@ -1,5 +1,9 @@
 # IOTA
 
+{% hint style="danger" %}
+We apologize that our current implementation does not yet support the Stardust Upgrade from IOTA. As such, you cannot issue or verify credentials associated via a did:iota. Please refer to our [roadmap](https://walt-id.notion.site/fcde1687baab42378b3047d4a22eeaca?v=1140dd17c17b4726a70cc1465d20866d) for more information on when our products will be updated to include this latest changes.
+{% endhint %}
+
 ### Getting Started
 
 Depending on your preference, start exploring with the deep dive or a tutorial.
