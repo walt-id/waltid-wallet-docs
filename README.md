@@ -5,7 +5,11 @@
 
 **Important:** Please be informed that, beginning from December 2023, the Wallet Kit will no longer receive new features. Furthermore, the Wallet Kit is planned for discontinuation by the end of Q3 2024.\
 \
-However, all functionalities offered by the Wallet Kit are now integrated into our new libraries, APIs, and apps in the walt.id [identity repo](https://github.com/walt-id/waltid-identity). Giving you more modularity, flexibility and ease-of-use to build end-to-end digital identity and wallet solutions.\
+However, all functionalities offered by the Wallet Kit are now integrated into our new libraries, APIs, and apps in the walt.id [identity repo](https://github.com/walt-id/waltid-identity). Giving you more modularity, flexibility and ease-of-use to build end-to-end digital identity and wallet solutions.
+
+
+
+Read the transition guide [here](wallet-kit/transition-to-the-community-stack.md).\
 \
 For any clarification or questions, feel free to [contact us](https://walt.id/discord).
 {% endhint %}

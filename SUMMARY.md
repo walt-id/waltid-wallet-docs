@@ -3,6 +3,7 @@
 ## What is the Wallet Kit? <a href="#wallet-kit" id="wallet-kit"></a>
 
 * [Introduction](README.md)
+* [Transition To The Community Stack](wallet-kit/transition-to-the-community-stack.md)
 * [Self-Sovereign Identity](wallet-kit/self-sovereign-identity/README.md)
   * [SSI | Basics](wallet-kit/self-sovereign-identity/ssi-101.md)
   * [Technology & Concepts](wallet-kit/self-sovereign-identity/technology-and-concepts.md)
