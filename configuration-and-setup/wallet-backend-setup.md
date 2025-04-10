@@ -1,21 +1,25 @@
+---
+noIndex: true
+---
+
 # Wallet backend setup
 
 To setup the wallet backend a few things may need to be considered and some configuration may be required, depending on your situation.
 
 ## Data root
 
-Configuration and data are kept in sub folders of the **data root** *(by default the current working directory)*:
+Configuration and data are kept in sub folders of the **data root** _(by default the current working directory)_:
 
 * `config/`
 * `data/`
 
-To override the **data root**, one can set the **environment variable**: 
+To override the **data root**, one can set the **environment variable**:
 
 `WALTID_DATA_ROOT`
 
 ## Wallet backend configuration
 
-The configuration of the wallet backend can be adapted, by modifying the file 
+The configuration of the wallet backend can be adapted, by modifying the file
 
 `config/wallet-config.json`
 
@@ -49,11 +53,12 @@ For each known issuer configure a unique **id**, a **description** and the **OID
     [...]
 }
 ```
+
 #### Secrets
 
-If you need to authenticate with the OIDC issuer service, you can configure the **client_id** and **client_secret** in two ways:
+If you need to authenticate with the OIDC issuer service, you can configure the **client\_id** and **client\_secret** in two ways:
 
-1) **In wallet-config.json**
+1. **In wallet-config.json**
 
 ```
 {
@@ -69,7 +74,7 @@ If you need to authenticate with the OIDC issuer service, you can configure the 
 }
 ```
 
-2) **In a separate file**
+1. **In a separate file**
 
 To keep the secrets separated from the main config, you can keep them in a separate file, relative to the **data root**:
 
@@ -86,8 +91,7 @@ To keep the secrets separated from the main config, you can keep them in a separ
 }
 ```
 
-You can make use of this separate secrets file, e.g. in a **Kubernetes** or **Docker Swarm** deployment, to keep the passwords in a safe secret object.
-Also, it enables you to separate the secrets from the default configuration, which you may want to check in to version control.
+You can make use of this separate secrets file, e.g. in a **Kubernetes** or **Docker Swarm** deployment, to keep the passwords in a safe secret object. Also, it enables you to separate the secrets from the default configuration, which you may want to check in to version control.
 
 ### Configuration example
 
@@ -126,14 +130,17 @@ To override the default bindings, set the following **environment variables**:
 `WALTID_WALLET_BACKEND_PORT`
 
 ### Command arguments
+
 To set binding address and port, you can also use the command arguments of the **run** command like so:
 
 _To set the bind address to "192.168.0.1" and the port to 8081_:
+
 ```
 waltid-walletkit run -b "192.168.0.1" -p 8081
 ```
 
 _To bind to all interfaces (on the default port)_:
+
 ```
 waltid-walletkit run --bind-all
 ```

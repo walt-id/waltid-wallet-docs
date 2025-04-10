@@ -1,3 +1,7 @@
+---
+noIndex: true
+---
+
 # Public deployments
 
 We operate the following as public services for demo and trial purposes only:

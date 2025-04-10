@@ -1,3 +1,7 @@
+---
+noIndex: true
+---
+
 # Dependency (JVM)
 
 The wallet can also be used as direct dependency for JVM-based applications. In this case an existing application can easily be transformed into an SSI wallet backend.

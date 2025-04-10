@@ -1,3 +1,7 @@
+---
+noIndex: true
+---
+
 # Wallet Kit
 
 This section elaborates the theory behind the Wallet:

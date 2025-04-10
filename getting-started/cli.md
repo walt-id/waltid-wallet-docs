@@ -1,3 +1,7 @@
+---
+noIndex: true
+---
+
 # CLI | Command Line Interface
 
 The wallet backend provides a simple command line interface, to run and/or configure the backend, including the issuer and verifier backends.

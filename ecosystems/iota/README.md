@@ -1,3 +1,7 @@
+---
+noIndex: true
+---
+
 # IOTA
 
 {% hint style="danger" %}

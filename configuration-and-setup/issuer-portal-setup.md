@@ -1,3 +1,7 @@
+---
+noIndex: true
+---
+
 # Issuer portal setup
 
 To setup the issuer portal backend a few things may need to be considered and some configuration may be required, depending on your situation.

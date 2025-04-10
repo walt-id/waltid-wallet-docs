@@ -1,3 +1,7 @@
+---
+noIndex: true
+---
+
 # Demo
 
 Demo showing an identity/SSI use case from a person’s (Holder’s) perspective.
@@ -12,4 +16,4 @@ Demo showing an identity/SSI use case from a person’s (Holder’s) perspective
 6. Present the VC to a [Verifier Portal](https://verifier.walt.id/).
 
 \
-_You can also experience an end-to-end use case demo by using the“_[_SSI Kit_](https://walt.id/ssi-kit)_” (incl. issue and verify VCs)._
+&#xNAN;_&#x59;ou can also experience an end-to-end use case demo by using the“_[_SSI Kit_](https://walt.id/ssi-kit)_” (incl. issue and verify VCs)._
